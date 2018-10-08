@@ -16,7 +16,7 @@ MetroWorks! - Data Structures Project (Semester 3)
 - Code Project - https://www.codeproject.com/Articles/19919/Shortest-Path-Problem-Dijkstra-s-Algorithm
 
 - A project implemented in C++ and Qt : https://www.youtube.com/watch?v=UM7KLNl6giA
-
+##### Resources that can be used to plot the shortest distance on the GUI
 - C++ GUI with  Qt:
 https://www.youtube.com/watch?v=aMUh9DmFLto&list=PLD0D54219E5F2544D
 
@@ -28,7 +28,6 @@ https://www.youtube.com/watch?v=aMUh9DmFLto&list=PLD0D54219E5F2544D
 https://www.codeproject.com/Articles/482735/TCP-Audio-Streamer-and-Player-Voice-Chat-over-IP
 
 - File server in C++ : http://blog.coredumping.com/file-server-and-client-using-sockets-in-c/
-
 
 
 
