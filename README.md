@@ -7,8 +7,6 @@ MetroWorks! - Data Structures Project (Semester 3)
 
 ### Resources to learn the skills needed for making the project
 
-Resource to learn it
-
 - https://brilliant.org/wiki/dijkstras-short-path-finder/
 
 - Code Project- https://www.codeproject.com/Articles/5707/Dijkstra-Algorithm
