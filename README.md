@@ -30,4 +30,7 @@ https://www.codeproject.com/Articles/482735/TCP-Audio-Streamer-and-Player-Voice-
 - File server in C++ : http://blog.coredumping.com/file-server-and-client-using-sockets-in-c/
 
 
+##### Books
+- http://www-cs.ccny.cuny.edu/~wolberg/cs221/qt/books/C++-GUI-Programming-with-Qt-4-1st-ed.pdf
+
 
