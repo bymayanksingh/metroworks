@@ -1,13 +1,9 @@
 graph G {
 node [shape=polygon]
 
-	subgraph cluster_0 {
-		style=filled;
-		color=seashell;
-		node [style=filled,color=white];
-
-		//red
-"Netaji Subhash Place" -- "Keshav Puram" [label="28",color=red ,penwidth="5"];
+//red
+"Rithala" -- "Netaji Subhash Place" [label="0",color=red ,penwidth="5"]
+"Netaji Subhash Place" -- "Keshav Puram" [label="4.8",color=red ,penwidth="5"];
 "Keshav Puram" -- "Kanhaiya Nagar" [label="28",color=red,penwidth="5"];
 "Kanhaiya Nagar" -- "Inderlok" [label="28",color=red,penwidth="5"];
 "Inderlok" -- "Shastri Nagar" [label="28",color=red,penwidth="5"];
@@ -18,25 +14,21 @@ node [shape=polygon]
 "Kashmere Gate" -- "Shastri Park" [label="28",color=red,penwidth="5"];
 "Shastri Park" --  "Seelampur" [label="28",color=red,penwidth="5"];
 "Seelampur" -- "Welcome" [label="28",color=red,penwidth="5"];
-		label = "RED LINE";
-	}
 
-
-
-//violet
-"Rajouri Garden" -- "Ramesh Nagar" [label="28",color=purple ,penwidth="5"];
-"Ramesh Nagar" -- "Moti Nagar" [label="28",color=purple ,penwidth="5"];
-"Moti Nagar" -- "Kirti Nagar" [label="28",color=purple ,penwidth="5"];
-"Kirti Nagar" -- "Shadipur" [label="28",color=purple ,penwidth="5"];
-"Shadipur" -- "Patel Nagar" [label="28",color=purple ,penwidth="5"];
-"Patel Nagar" -- "Rajender Place" [label="28",color=purple ,penwidth="5"];
-"Rajender Place" -- "Karol Bagh" [label="28",color=purple ,penwidth="5"];
-"Karol Bagh" -- "Rajiv Chowk" [label="28",color=purple ,penwidth="5"];
-"Rajiv Chowk" -- "Barakhamba Road" [label="28",color=purple ,penwidth="5"];
-"Barakhamba Road" -- "Mandi House" [label="28",color=purple ,penwidth="5"];
-"Mandi House" -- "Pragati Maiden" [label="28",color=purple ,penwidth="5"];
-"Pragati Maiden" -- "Inderprastha" [label="28",color=purple ,penwidth="5"];
-"Inderprastha" -- "Yamuna Bank" [label="28",color=purple ,penwidth="5"];
+//blue
+"Rajouri Garden" -- "Ramesh Nagar" [label="28",color=blue ,penwidth="5"];
+"Ramesh Nagar" -- "Moti Nagar" [label="28",color=blue ,penwidth="5"];
+"Moti Nagar" -- "Kirti Nagar" [label="28",color=blue ,penwidth="5"];
+"Kirti Nagar" -- "Shadipur" [label="28",color=blue ,penwidth="5"];
+"Shadipur" -- "Patel Nagar" [label="28",color=blue ,penwidth="5"];
+"Patel Nagar" -- "Rajender Place" [label="28",color=blue ,penwidth="5"];
+"Rajender Place" -- "Karol Bagh" [label="28",color=blue ,penwidth="5"];
+"Karol Bagh" -- "Rajiv Chowk" [label="28",color=blue ,penwidth="5"];
+"Rajiv Chowk" -- "Barakhamba Road" [label="28",color=blue ,penwidth="5"];
+"Barakhamba Road" -- "Mandi House" [label="28",color=blue ,penwidth="5"];
+"Mandi House" -- "Pragati Maiden" [label="28",color=blue ,penwidth="5"];
+"Pragati Maiden" -- "Inderprastha" [label="28",color=blue ,penwidth="5"];
+"Inderprastha" -- "Yamuna Bank" [label="28",color=blue ,penwidth="5"];
 
 //green
 "Madipur" -- "Shivaji Park" [label="28",color=green ,penwidth="5"];
@@ -46,10 +38,10 @@ node [shape=polygon]
 "Ashok Park" -- "Inderlok" [label="28",color=green ,penwidth="5"];
 "Sat Guru Ram Singh Marg" -- "Kirti Nagar" [label="28",color=green ,penwidth="5"];
 
-//magenta
-"Central Secartarait" -- "Khan Market" [label="28",color=magenta ,penwidth="5"];
-"Khan Market" -- "JL Nehru Stadium" [label="28",color=magenta ,penwidth="5"];
-"JL Nehru Stadium" -- "Jangpura" [label="28",color=magenta ,penwidth="5"];
+//violet
+"Central Secartarait" -- "Khan Market" [label="28",color=violet ,penwidth="5"];
+"Khan Market" -- "JL Nehru Stadium" [label="28",color=violet ,penwidth="5"];
+"JL Nehru Stadium" -- "Jangpura" [label="28",color=violet ,penwidth="5"];
  
  //yellow
 "Vishwavidalaya" -- "Vidhan Sabha" [label="28",color=yellow ,penwidth="5"];
@@ -62,7 +54,6 @@ node [shape=polygon]
 "Rajiv Chowk" -- "Patel Chowk" [label="28",color=yellow ,penwidth="5"];
 "Patel Chowk" -- "Central Secartarait" [label="28",color=yellow ,penwidth="5"];
 "Central Secartarait" -- "Udyog Bhawan" [label="28",color=yellow ,penwidth="5"];
-"Udyog Bhawan" -- "Race Course" [label="28",color=yellow ,penwidth="5"];
-"Race Course" -- "Jor Bagh" [label="28",color=yellow ,penwidth="5"];
-
+"Udyog Bhawan" -- "Lok Kalyan Marg" [label="28",color=yellow ,penwidth="5"];
+"Lok Kalyan Marg" -- "Jor Bagh" [label="28",color=yellow ,penwidth="5"];
 }
