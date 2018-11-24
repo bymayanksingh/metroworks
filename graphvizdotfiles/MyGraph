@@ -1,0 +1,66 @@
+graph G {
+node [shape=box]
+
+//red
+"Rithala" -- "Netaji Subhash Place" [label="5.2",color=red ,penwidth="5"]
+"Netaji Subhash Place" -- "Keshav Puram" [label="1.2",color=red ,penwidth="5"];
+"Keshav Puram" -- "Kanhaiya Nagar" [label="0.8",color=red,penwidth="5"];
+"Kanhaiya Nagar" -- "Inderlok" [label="1.2",color=red,penwidth="5"];
+"Inderlok" -- "Shastri Nagar" [label="1.2",color=red,penwidth="5"];
+"Shastri Nagar" -- "Pratap Nagar" [label="1.7",color=red,penwidth="5"];
+"Pratap Nagar" -- "Pulbangash"  [label="0.8",color=red,penwidth="5"];
+"Pulbangash" -- "Tis Hazari" [label="0.9",color=red,penwidth="5"];
+"Tis Hazari" -- "Kashmere Gate" [label="1.1",color=red,penwidth="5"];
+"Kashmere Gate" -- "Shastri Park" [label="2.2",color=red,penwidth="5"];
+"Shastri Park" --  "Seelampur" [label="1.6",color=red,penwidth="5"];
+"Seelampur" -- "Welcome" [label="1.1",color=red,penwidth="5"];
+
+//blue
+"Rajouri Garden" -- "Ramesh Nagar" [label="1",color=blue ,penwidth="5"];
+"Ramesh Nagar" -- "Moti Nagar" [label="1.2",color=blue ,penwidth="5"];
+"Moti Nagar" -- "Kirti Nagar" [label="1",color=blue ,penwidth="5"];
+"Kirti Nagar" -- "Shadipur" [label="0.7",color=blue ,penwidth="5"];
+"Shadipur" -- "Patel Nagar" [label="1.3",color=blue ,penwidth="5"];
+"Patel Nagar" -- "Rajender Place" [label="0.9",color=blue ,penwidth="5"];
+"Rajender Place" -- "Karol Bagh" [label="1",color=blue ,penwidth="5"];
+"Karol Bagh" -- "Rajiv Chowk" [label="3.4",color=blue ,penwidth="5"];
+"Rajiv Chowk" -- "Barakhamba Road" [label="0.7",color=blue ,penwidth="5"];
+"Barakhamba Road" -- "Mandi House" [label="1",color=blue ,penwidth="5"];
+"Mandi House" -- "Pragati Maiden" [label="0.8",color=blue ,penwidth="5"];
+"Pragati Maiden" -- "Inderprastha" [label="0.8",color=blue ,penwidth="5"];
+"Inderprastha" -- "Yamuna Bank" [label="1.8",color=blue ,penwidth="5"];
+
+//green
+"Madipur" -- "Shivaji Park" [label="1.1",color=green ,penwidth="5"];
+"Shivaji Park" -- "Punjabi Bagh" [label="1.6",color=green ,penwidth="5"];
+"Punjabi Bagh" -- "Ashok Park" [label="0.9",color=green ,penwidth="5"];
+"Ashok Park" -- "Inderlok" [label="1.4",color=green ,penwidth="5"];
+"Ashok Park" -- "Sat Guru Ram Singh Marg"  [label="1.1",color=green ,penwidth="5"];
+"Sat Guru Ram Singh Marg" -- "Kirti Nagar" [label="1",color=green ,penwidth="5"];
+
+//violet
+"Kashmere Gate" -- "Lal Qila" [label="1.5",color=violet ,penwidth="5"];
+"Lal Qila" -- "Jama Masjid" [label="0.8",color=violet ,penwidth="5"];
+"Jama Masjid" -- "Delhi Gate" [label="1.4",color=violet ,penwidth="5"];
+"Delhi Gate" -- "ITO" [label="1.3",color=violet ,penwidth="5"];
+"ITO" -- "Mandi House" [label="0.8",color=violet ,penwidth="5"];
+"Mandi House" -- "Janptah" [label="1.4",color=violet ,penwidth="5"];
+"Janptah" -- "Central Secartarait" [label="1.3",color=violet ,penwidth="5"];
+"Central Secartarait" -- "Khan Market" [label="2.1",color=violet ,penwidth="5"];
+"Khan Market" -- "JL Nehru Stadium" [label="1.4",color=violet ,penwidth="5"];
+"JL Nehru Stadium" -- "Jangpura" [label="0.9",color=violet ,penwidth="5"];
+ 
+ //yellow
+"Vishwavidalaya" -- "Vidhan Sabha" [label="1",color=yellow ,penwidth="5"];
+"Vidhan Sabha" -- "Civil Lines" [label="1.3",color=yellow ,penwidth="5"];
+"Civil Lines" -- "Kashmere Gate" [label="1.1",color=yellow ,penwidth="5"];
+"Kashmere Gate" -- "Chandni Chowk" [label="1.1",color=yellow ,penwidth="5"];
+"Chandni Chowk" -- "Chawri Bazar" [label="1",color=yellow ,penwidth="5"];
+"Chawri Bazar" -- "New Delhi" [label="0.8",color=yellow ,penwidth="5"];
+"New Delhi" -- "Rajiv Chowk" [label="1.1",color=yellow ,penwidth="5"];
+"Rajiv Chowk" -- "Patel Chowk" [label="1.3",color=yellow ,penwidth="5"];
+"Patel Chowk" -- "Central Secartarait" [label="0.9",color=yellow ,penwidth="5"];
+"Central Secartarait" -- "Udyog Bhawan" [label="0.3",color=yellow ,penwidth="5"];
+"Udyog Bhawan" -- "Lok Kalyan Marg" [label="1.6",color=yellow ,penwidth="5"];
+"Lok Kalyan Marg" -- "Jor Bagh" [label="1.2",color=yellow ,penwidth="5"];
+}
