@@ -145,7 +145,7 @@ Metro.addEdge("Vishwavidalaya","Vidhan Sabha" ,1);
 Metro.addEdge("Vidhan Sabha","Civil Lines" ,1.3);
 Metro.addEdge("Civil Lines","Kashmere Gate" ,1.1);
 Metro.addEdge("Kashmere Gate","Chandni Chowk" ,1.1);
-Metro.addEdge("Chandni Chowk","Chawri Bazar" ,1);
+Metro.addEdge("Chandni Chowk","Chawri Bazar" , 1);
 Metro.addEdge("Chawri Bazar","New Delhi" ,0.8);
 Metro.addEdge("New Delhi","Rajiv Chowk" ,1.1);
 Metro.addEdge("Rajiv Chowk","Patel Chowk" ,1.3);
