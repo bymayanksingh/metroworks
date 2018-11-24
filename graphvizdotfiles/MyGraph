@@ -1,5 +1,5 @@
 graph G {
-node [shape=box]
+node [shape=rect]
 
 //red
 "Rithala" -- "Netaji Subhash Place" [label="5.2",color=red ,penwidth="5"]
