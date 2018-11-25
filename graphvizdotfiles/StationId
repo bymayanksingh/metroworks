@@ -56,7 +56,7 @@ subgraph cluster4
     node33 [shape=record, label="{33 | Chawri Bazar }"]
     node34 [shape=record, label="{34 | New Delhi }"]
     node35 [shape=record, label="{35 | Patel Chowk }"]
-    node36 [shape=record, label="{36 | Central Secartarait }"]
+    node36 [shape=record, label="{36 | Central Secretariat }"]
     node37 [shape=record, label="{37 | Udyog Bhawan }"]
     node38 [shape=record, label="{38 | Lok Kalyan Marg }"]
     node39 [shape=record, label="{39 | Jor Bagh }"]
