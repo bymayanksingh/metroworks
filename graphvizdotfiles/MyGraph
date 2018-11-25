@@ -1,5 +1,5 @@
 graph G {
-node [shape=box]
+node [shape=rect]
 
 //red
 "Rithala" -- "Netaji Subhash Place" [label="5.2",color=red ,penwidth="5"]
@@ -45,8 +45,8 @@ node [shape=box]
 "Delhi Gate" -- "ITO" [label="1.3",color=violet ,penwidth="5"];
 "ITO" -- "Mandi House" [label="0.8",color=violet ,penwidth="5"];
 "Mandi House" -- "Janptah" [label="1.4",color=violet ,penwidth="5"];
-"Janptah" -- "Central Secartarait" [label="1.3",color=violet ,penwidth="5"];
-"Central Secartarait" -- "Khan Market" [label="2.1",color=violet ,penwidth="5"];
+"Janptah" -- "Central Secretariat" [label="1.3",color=violet ,penwidth="5"];
+"Central Secretariat" -- "Khan Market" [label="2.1",color=violet ,penwidth="5"];
 "Khan Market" -- "JL Nehru Stadium" [label="1.4",color=violet ,penwidth="5"];
 "JL Nehru Stadium" -- "Jangpura" [label="0.9",color=violet ,penwidth="5"];
  
@@ -59,8 +59,8 @@ node [shape=box]
 "Chawri Bazar" -- "New Delhi" [label="0.8",color=yellow ,penwidth="5"];
 "New Delhi" -- "Rajiv Chowk" [label="1.1",color=yellow ,penwidth="5"];
 "Rajiv Chowk" -- "Patel Chowk" [label="1.3",color=yellow ,penwidth="5"];
-"Patel Chowk" -- "Central Secartarait" [label="0.9",color=yellow ,penwidth="5"];
-"Central Secartarait" -- "Udyog Bhawan" [label="0.3",color=yellow ,penwidth="5"];
+"Patel Chowk" -- "Central Secretariat" [label="0.9",color=yellow ,penwidth="5"];
+"Central Secretariat" -- "Udyog Bhawan" [label="0.3",color=yellow ,penwidth="5"];
 "Udyog Bhawan" -- "Lok Kalyan Marg" [label="1.6",color=yellow ,penwidth="5"];
 "Lok Kalyan Marg" -- "Jor Bagh" [label="1.2",color=yellow ,penwidth="5"];
 }

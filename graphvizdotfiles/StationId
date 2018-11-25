@@ -1,0 +1,85 @@
+Graph G
+{
+node [shape=rect]
+label = "Stadion IDs"
+subgraph cluster1
+{
+    label="0-9";
+    node0 [shape=record, label="{0 | Welcome }"] ;
+    node1 [shape=record, label="{1 | Seelampur }"] ;
+    node2 [shape=record, label="{2 | Shastri Park }"] ;
+    node3 [shape=record, label="{3 | Kashmere Gate }"] ;
+    node4 [shape=record, label="{4 | Tis Hazari }"] ;
+    node5 [shape=record, label="{5 | Pulbangash }"] ;
+    node6 [shape=record, label="{6 | Pratap Nagar }"] ;
+    node7 [shape=record, label="{7 | Shastri Nagar }"] ;
+    node8 [shape=record, label="{8 | Inderlok }"] ;
+    node9 [shape=record, label="{9 | Kanhaiya Nagar }"] ;
+}
+
+subgraph cluster2
+{
+    label="10-19";
+    node10 [shape=record, label="{10 | Keshav Puram }"];
+    node11 [shape=record, label="{11 | Netaji Subhash Place }"];
+    node12 [shape=record, label="{12 | Rithala }"];
+    node13 [shape=record, label="{13 | Madipur }"];
+    node14 [shape=record, label="{14 | Shivaji Park }"];
+    node15 [shape=record, label="{15 | Punjabi Bagh }"];
+    node16 [shape=record, label="{16 | Ashok Park }"];
+    node17 [shape=record, label="{17 | Sat Guru Ram Singh Marg }"];
+    node18 [shape=record, label="{18 | Kirti Nagar }"];
+    node19 [shape=record, label="{19 | Shadipur }"];
+}
+
+subgraph cluster3
+{
+    label="20-29";
+    node20 [shape=record, label="{20 | Patel Nagar }"]
+    node21 [shape=record, label="{21 | Rajender Place }"]
+    node22 [shape=record, label="{22 | Karol Bagh }"]
+    node23 [shape=record, label="{23 | Rajiv Chowk }"]
+    node24 [shape=record, label="{24 | Barakhamba Road }"]
+    node25 [shape=record, label="{25 | Mandi House }"]
+    node26 [shape=record, label="{26 | Pragati Maiden }"]
+    node27 [shape=record, label="{27 | Inderprastha }"]
+    node28 [shape=record, label="{28 | Yamuna Bank }"]
+    node29 [shape=record, label="{29 | Vishwavidalaya }"]
+}
+
+subgraph cluster4
+{
+    label="30-39";
+    node30 [shape=record, label="{30 | Vidhan Sabha }"]
+    node31 [shape=record, label="{31 | Civil Lines }"]
+    node32 [shape=record, label="{32 | Chandni Chowk }"]
+    node33 [shape=record, label="{33 | Chawri Bazar }"]
+    node34 [shape=record, label="{34 | New Delhi }"]
+    node35 [shape=record, label="{35 | Patel Chowk }"]
+    node36 [shape=record, label="{36 | Central Secretariat }"]
+    node37 [shape=record, label="{37 | Udyog Bhawan }"]
+    node38 [shape=record, label="{38 | Lok Kalyan Marg }"]
+    node39 [shape=record, label="{39 | Jor Bagh }"]
+
+}
+
+subgraph cluster5
+{
+    label="40-50";
+    node40 [shape=record, label="{40 | Lal Qila }"]
+    node41 [shape=record, label="{41 | Jama Masjid }"]
+    node42 [shape=record, label="{42 | Delhi Gate }"]
+    node43 [shape=record, label="{43 | ITO }"]
+    node44 [shape=record, label="{44 | Janpath }"]
+    node45 [shape=record, label="{45 | Khan Market }"]
+    node46 [shape=record, label="{46 | JL Nehru Stadium }"]
+    node47 [shape=record, label="{47 | Jangpura }"]
+    node48 [shape=record, label="{48 | Rajouri Garden }"]
+    node49 [shape=record, label="{49 | Ramesh Nagar }"]
+    node50 [shape=record, label="{50 | Moti Nagar }"]
+}
+
+
+
+
+}

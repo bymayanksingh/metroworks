@@ -20,8 +20,20 @@ public:
         
     }
     
+    void DijkstraGetShortestPathTo(T destination, map<T,T> &prev)
+    {
+        list<T> path;
+        for( ; destination!=""; destination = prev[destination])
+        {
+            path.push_back(destination);
+        }
+        path.reverse();
+        copy(path.begin(), path.end(), ostream_iterator<T>(cout, "\n"));
+    }
+
     void printAdj();
-    void dijsktraSSSP(T);
+    void dijsktraSSSP(T,map<T,float> &dist, map<T,T> &prev);
+
 };
 
     template<typename T>
@@ -45,18 +57,19 @@ public:
     }
 
     template<typename T>
-    void Graph<T>::dijsktraSSSP(T src)
+    void Graph<T>::dijsktraSSSP(T src, map<T,float> &dist, map<T,T> &prev)
     {    
-        map<T,float> dist;
         
+        set<pair<float, T> > s;
         //Set all distance to infinity
+        prev.clear();
         for(auto j:m)
         {
-            dist[j.first] = INT_MAX;
+            dist[j.first] = numeric_limits<float>::infinity();
+            prev[j.first] = "";
         }
         
         //Make a set to find a out node with the minimum distance
-        set<pair<float, T> > s;
         
         dist[src] = 0;
         s.insert(make_pair(0,src));
@@ -66,37 +79,40 @@ public:
             
             //Find the pair at the front.
             auto p =   *(s.begin());
-            T node = p.second;
+            T node = p.second; // NODE
             
-            float nodeDist = p.first;
+            float nodeDist = p.first; //NODEDIST
             s.erase(s.begin());
             //Iterate over neighbours/children of the current node
             for(auto childPair: m[node])
             {
+                T dest = childPair.first;
+                float weight = childPair.second;
+                float distance_through_node = nodeDist + childPair.second;
                 
-                if(nodeDist + childPair.second < dist[childPair.first])
+                if(distance_through_node < dist[childPair.first])
                 {    
                     //In the set updation of a particular is not possible
                     // we have to remove the old pair, and insert the new pair to simulation updation
-                    T dest = childPair.first;
+                    
                     auto f = s.find( make_pair(dist[dest],dest));
                     if(f!=s.end())
                     {
                         s.erase(f);
                     }
                     //Insert the new pair
-                    dist[dest] = nodeDist + childPair.second;
+                    dist[dest] = distance_through_node;
+                    prev[dest] = node;
                     s.insert(make_pair(dist[dest],dest));
                 }
             }
         }
         //Lets print distance to all other node from src
-        for(auto d:dist)
+        /*for(auto d:dist)
         {
             cout<<d.first<<",is located at distance of  "<<d.second<<endl;
-        }
-
-}
+        }*/
+    }
 
 int main()
 {
@@ -144,8 +160,8 @@ int main()
     Metro.addEdge("Delhi Gate","ITO" ,1.3);
     Metro.addEdge("ITO","Mandi House" ,0.8);
     Metro.addEdge("Mandi House","Janptah" ,1.4);
-    Metro.addEdge("Janptah","Central Secartarait" ,1.3);
-    Metro.addEdge("Central Secartarait","Khan Market" ,2.1);
+    Metro.addEdge("Janptah","Central Secretariat" ,1.3);
+    Metro.addEdge("Central Secretariat","Khan Market" ,2.1);
     Metro.addEdge("Khan Market","JL Nehru Stadium" ,1.4);
     Metro.addEdge("JL Nehru Stadium","Jangpura" ,0.9);
     //yellow
@@ -157,10 +173,20 @@ int main()
     Metro.addEdge("Chawri Bazar","New Delhi" ,0.8);
     Metro.addEdge("New Delhi","Rajiv Chowk" ,1.1);
     Metro.addEdge("Rajiv Chowk","Patel Chowk" ,1.3);
-    Metro.addEdge("Patel Chowk","Central Secartarait" ,0.9);
+    Metro.addEdge("Patel Chowk","Central Secretariat" ,0.9);
     Metro.addEdge("Central Secretariat","Udyog Bhawan" ,0.3);
     Metro.addEdge("Udyog Bhawan","Lok Kalyan Marg" ,1.6);
     Metro.addEdge("Lok Kalyan Marg","Jor Bagh" ,1.2);
-    Metro.dijsktraSSSP("Madipur");
+    map<string,float> dist; 
+    map<string,string> prev;
+    string sourcestn, deststn;
+    cout<<"enter source station in capital case: ";
+    getline(cin,sourcestn);
+    cout<<"enter destination station in capital case: ";
+    getline(cin,deststn);
+    Metro.dijsktraSSSP(sourcestn, dist, prev);
+    cout<<"Ditance from "<<sourcestn<<" to "<<deststn<< "<<dist[deststn]<<endl;
+    cout<<"Path: "<<endl;
+    Metro.DijkstraGetShortestPathTo(deststn,prev);
     return 0;
 }
