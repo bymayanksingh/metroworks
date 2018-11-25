@@ -158,7 +158,7 @@ int main()
     Metro.addEdge("New Delhi","Rajiv Chowk" ,1.1);
     Metro.addEdge("Rajiv Chowk","Patel Chowk" ,1.3);
     Metro.addEdge("Patel Chowk","Central Secartarait" ,0.9);
-    Metro.addEdge("Central Secartarait","Udyog Bhawan" ,0.3);
+    Metro.addEdge("Central Secretariat","Udyog Bhawan" ,0.3);
     Metro.addEdge("Udyog Bhawan","Lok Kalyan Marg" ,1.6);
     Metro.addEdge("Lok Kalyan Marg","Jor Bagh" ,1.2);
     Metro.dijsktraSSSP("Madipur");
