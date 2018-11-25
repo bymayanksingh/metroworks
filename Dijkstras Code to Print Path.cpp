@@ -185,7 +185,7 @@ int main()
     cout<<"enter destination station in capital case: ";
     getline(cin,deststn);
     Metro.dijsktraSSSP(sourcestn, dist, prev);
-    cout<<"Ditance from "<<sourcestn<<" to "<<deststn<< "<<dist[deststn]<<endl;
+    cout<<"Ditance from "<<sourcestn<<" to "<<deststn<<" "<<dist[deststn]<<endl;
     cout<<"Path: "<<endl;
     Metro.DijkstraGetShortestPathTo(deststn,prev);
     return 0;
