@@ -7,13 +7,13 @@
 7	Shastri Park
 8	Kashmere Gate
 9	Tis Hazari
-10	Pul Bangash
+10	Pulbangash
 11	Pratap Nagar
 12	Shastri Nagar
-13	Inder Lok
+13	Inderlok
 14	Kanhaiya Nagar
 15	Keshav Puram
-16	Netaji Subash Place
+16	Netaji Subhash Place
 17	Kohat Enclave
 18	Pitam Pura
 19	Rohini East
@@ -31,7 +31,7 @@
 31	Vidhan Sabha
 32	Civil Lines
 33	Kashmere Gate
-34	Chandhni Chowk
+34	Chandni Chowk
 35	Chawri Bazar
 36	New Delhi
 37	Rajiv Chowk
@@ -39,7 +39,7 @@
 39	Central Secretariat
 40	Udyog Bhawan
 41	Lok Kalyan Marg
-42	Jorbagh
+42	Jor Bagh
 43	INA
 44	AIIMS
 45	Green Park
@@ -59,23 +59,23 @@
 59	Noida City Centre
 60	Golf Course
 61	Botanical Garden
-62	Noida Sect 18
-63	Noida Sect 16
-64	Noida Sect 15
+62	Noida Sector-18
+63	Noida Sector-16
+64	Noida Sector-15
 65	New Ashok Nagar
-66	Mayur Vihar Ext
-67	Mayur Vihar-I
+66	Mayur Vihar Extention
+67	Mayur Vihar Phase-1
 68	Akshardham
 69	Yamuna Bank
-70	Indraprastha
-71	Pragati Maidan
+70	Inderprastha
+71	Pragati Maiden
 72	Mandi House
 73	Barakhamba Road
 74	Rajiv Chowk
 75	RK Ashram Marg
 76	Jhandewalan
 77	Karol Bagh
-78	Rajendra Place
+78	Rajender Place
 79	Patel Nagar
 80	Shadipur
 81	Kirti Nagar
@@ -123,23 +123,23 @@
 123	Peera Garhi
 124	Paschim Vihar (West)
 125	Paschim Vihar (East)
-126	Madi Pur
+126	Madipur
 127	Shivaji Park
 128	Punjabi Bagh
-129	Ashok Park Main
-130	Inder Lok
-131	Satguru Ram Singh Marg
+129	Ashok Park
+130	Inderlok
+131	Sant Guru Ram Singh Marg
 132	Kirti Nagar
 133	Kashmere Gate
-134	Lal Quila
+134	Lal Qila
 135	Jama Masjid
 136	Delhi Gate
 137	ITO
 138	Mandi House
-139	Janpath
+139	Janptah
 140	Central Secretariat
 141	Khan Market
-142	JLN
+142	JL Nehru Stadium
 143	Jangpura
 144	Lajpat Nagar
 145	Moolchand
