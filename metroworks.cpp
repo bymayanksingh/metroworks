@@ -120,7 +120,7 @@ void Graph<T>::calcPrice(string srstn,string dstn)
             std::istringstream(v1[0]) >> a;
 
         }
-        else if(v1[1]==dstn)
+        if(v1[1]==dstn)
         {
             f++;
             std::istringstream(v1[0]) >> b;
@@ -131,7 +131,7 @@ void Graph<T>::calcPrice(string srstn,string dstn)
     //cout<<"Id of "<<srstn<<" is "<<a<<endl;
     //cout<<"Id of "<<dstn<<" is "<<b<<endl;
     cout<<endl<<"\t\t\t";
-    cout<<"--> Fare is: "<<arr[a-1][b-1]<<endl;
+    cout<<"--> Fare is: र"<<arr[a-1][b-1]<<endl;
 }
 
 // FARE CALCULATION ENDS HERE
@@ -428,7 +428,7 @@ int main()
     Metro.dijsktraSSSP(sourcestn, dist, prev);
     //system("echo \"\e[96m\"");
     cout<<endl<<"\t\t";
-    cout<<"Distance from "<<sourcestn<<" to "<<deststn<<" - "<<dist[deststn]<<endl;
+    cout<<"Distance from "<<sourcestn<<" to "<<deststn<<" - "<<dist[deststn]<<" Kms"<<endl;
     cout<<endl<<"\t\tPath: "<<endl;
     Metro.DijkstraGetShortestPathTo(deststn,prev);
     Metro.makedotfile();
