@@ -1,6 +1,6 @@
 graph G {
 node [shape=rect, dpi=600]
-margin=0.75
+margin=1
 
 //red
 "Rithala" -- "Netaji Subhash Place" [label="5.2",color=red ,penwidth="2"];

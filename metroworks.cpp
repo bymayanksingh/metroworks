@@ -1,11 +1,17 @@
 //run using g++ -std=c++11 Dijkstras.cpp
 #include<bits/stdc++.h>
-#include <graphviz/gvc.h>
-#include <list>
+//#include <graphviz/gvc.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <errno.h>
+#include <stdio.h>
+#include <sys/wait.h>
+#include <stdlib.h>
 using namespace std;
 template<typename T>
 class Graph
 {
+
     map<T, list<pair<T,float> > > m;
 public:
     list<T> path;
@@ -26,7 +32,8 @@ public:
             path.push_back(destination);
         }
         path.reverse();
-        copy(path.begin(), path.end(), ostream_iterator<T>(cout, "\n"));
+        cout<<"\t\t\t";
+        copy(path.begin(), path.end(), ostream_iterator<T>(cout, "\n\t\t\t"));
     }
     void printAdj();
     void dijsktraSSSP(T,map<T,float> &dist, map<T,T> &prev);
@@ -121,9 +128,10 @@ void Graph<T>::calcPrice(string srstn,string dstn)
         if(f==2)
             break;
     }
-    cout<<"Id of "<<srstn<<" is "<<a<<endl;
-    cout<<"Id of "<<dstn<<" is "<<b<<endl;
-    cout<<"Fare is: "<<arr[a-1][b-1]<<endl;
+    //cout<<"Id of "<<srstn<<" is "<<a<<endl;
+    //cout<<"Id of "<<dstn<<" is "<<b<<endl;
+    cout<<endl<<"\t\t\t";
+    cout<<"--> Fare is: "<<arr[a-1][b-1]<<endl;
 }
 
 // FARE CALCULATION ENDS HERE
@@ -164,7 +172,7 @@ void Graph<T>::makedotfile()
     string delimiter=",";
     ofstream fout(filename);
     fout<<"graph G {"<<endl;
-    fout<<"node [shape=rect]"<<endl;
+    fout<<"node [shape=rect,dpi=600] margin=0.75"<<endl;
     fout<<"\n//"<<clr<<endl;
     string x;
     ifstream file("data.txt");
@@ -289,10 +297,23 @@ void Graph<T>::dijsktraSSSP(T src, map<T,float> &dist, map<T,T> &prev)
 
 int main()
 {
+    system("gnome-terminal -x sh -c \"fim --autowindow graph.png\"");
+    system("clear");
+    //system("printf '\e[45;5;196m'");
+    //system("echo  \"\e[96m\"");
+    system("sl -alfe");
+    system("clear");
 
+    cout<<"\t\t"<<" __  __      _              __        __         _ "<<endl;
+    cout<<"\t\t"<<"|  \\/  | ___| |_ _ __ ___   \\ \\      / /__  _ __| | _____"<<endl;
+    cout<<"\t\t"<<"| |\\/| |/ _ \\ __| '__/ _ \\   \\ \\ /\\ / / _ \\| '__| |/ / __|"<<endl;
+    cout<<"\t\t"<<"| |  | |  __/ |_| | | (_) |   \\ V  V / (_) | |  |   <\\__ \\ " <<endl;
+    cout<<"\t\t"<<"|_|  |_|\\___|\\__|_|  \\___/     \\_/\\_/ \\___/|_|  |_|\\_\\___/"<<endl;
+    system("echo  \"\e[96m\"");
+    //system("figlet Metro Works");
     string source, destination;
     Graph<string> Metro;
-
+    //red
     Metro.addEdge("Rithala","Netaji Subhash Place",5.2);
     Metro.addEdge("Netaji Subhash Place","Keshav Puram",1.2);
     Metro.addEdge("Keshav Puram","Kanhaiya Nagar",0.8);
@@ -393,15 +414,26 @@ int main()
     map<string,float> dist;
     map<string,string> prev;
     string sourcestn, deststn;
-    cout<<"enter source station in capital case: ";
+    cout<<endl<<endl<<endl;
+    cout<<"\t\t";
+    cout<<"Enter source station in capital case: ";
     getline(cin,sourcestn);
-    cout<<"enter destination station in capital case: ";
+    //system("echo \"\e[92m\"");
+    cout<<endl;
+    cout<<"\t\t";
+    cout<<"Enter destination station in capital case: ";
+    //system("echo \"\e[96m\"");
     getline(cin,deststn);
+    //system("echo \"\e[92m\"");
     Metro.dijsktraSSSP(sourcestn, dist, prev);
+    //system("echo \"\e[96m\"");
+    cout<<endl<<"\t\t";
     cout<<"Distance from "<<sourcestn<<" to "<<deststn<<" - "<<dist[deststn]<<endl;
-    cout<<"Path: "<<endl;
+    cout<<endl<<"\t\tPath: "<<endl;
     Metro.DijkstraGetShortestPathTo(deststn,prev);
     Metro.makedotfile();
     Metro.calcPrice(sourcestn,deststn);
+    system("dot -Tpng finalmap.dot -o path.png");
+    system("gnome-terminal  -- sh -c \"fim --autowindow path.png\"");
     return 0;
 }
