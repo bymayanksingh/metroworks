@@ -35,7 +35,7 @@ public:
         cout<<"\t\t\t";
         copy(path.begin(), path.end(), ostream_iterator<T>(cout, "\n\t\t\t"));
     }
-    void printAdj();
+    bool printAdj(string,string);
     void dijsktraSSSP(T,map<T,float> &dist, map<T,T> &prev);
     void makedotfile();
     vector<string> split (const string &s, char delim)
@@ -218,22 +218,30 @@ void Graph<T>::makedotfile()
 }
 
 template<typename T>
-void Graph<T>::printAdj()
+bool Graph<T>::printAdj(string src,string dest)
 {
+    int f;f=0;
     //Let try to print the adj list
     //Iterate over all the key value pairs in the map
     for(auto j:m)
     {
-
-        cout<<j.first<<"->";
-
+    if(j.first==src)
+        f++;
         //Iterater over the list of cities
-        for(auto l: j.second)
+        for(auto l:j.second)
         {
-            cout<<"("<<l.first<<","<<l.second<<")";
+
+            if(l.first==dest)
+            {
+                f++;
+            }
         }
         cout<<endl;
     }
+    if(f>1)
+        return true;
+    else
+        return false;
 
 }
 
@@ -424,6 +432,13 @@ int main()
     cout<<"Enter destination station in capital case: ";
     //system("echo \"\e[96m\"");
     getline(cin,deststn);
+    bool res=Metro.printAdj(sourcestn,deststn);
+    if(res==false)
+    {
+        cout<<"Invalid Station";
+        return 0;
+    }
+
     //system("echo \"\e[92m\"");
     Metro.dijsktraSSSP(sourcestn, dist, prev);
     //system("echo \"\e[96m\"");
