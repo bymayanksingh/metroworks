@@ -1,66 +1,109 @@
 graph G {
-node [shape=rect]
+node [shape=rect, dpi=600]
+margin=0.75
 
 //red
-"Rithala" -- "Netaji Subhash Place" [label="5.2",color=red ,penwidth="5"]
-"Netaji Subhash Place" -- "Keshav Puram" [label="1.2",color=red ,penwidth="5"];
-"Keshav Puram" -- "Kanhaiya Nagar" [label="0.8",color=red,penwidth="5"];
-"Kanhaiya Nagar" -- "Inderlok" [label="1.2",color=red,penwidth="5"];
-"Inderlok" -- "Shastri Nagar" [label="1.2",color=red,penwidth="5"];
-"Shastri Nagar" -- "Pratap Nagar" [label="1.7",color=red,penwidth="5"];
-"Pratap Nagar" -- "Pulbangash"  [label="0.8",color=red,penwidth="5"];
-"Pulbangash" -- "Tis Hazari" [label="0.9",color=red,penwidth="5"];
-"Tis Hazari" -- "Kashmere Gate" [label="1.1",color=red,penwidth="5"];
-"Kashmere Gate" -- "Shastri Park" [label="2.2",color=red,penwidth="5"];
-"Shastri Park" --  "Seelampur" [label="1.6",color=red,penwidth="5"];
-"Seelampur" -- "Welcome" [label="1.1",color=red,penwidth="5"];
+"Rithala" -- "Netaji Subhash Place" [label="5.2",color=red ,penwidth="2"];
+"Netaji Subhash Place" -- "Keshav Puram" [label="1.2",color=red ,penwidth="2"];
+"Keshav Puram" -- "Kanhaiya Nagar" [label="0.8",color=red ,penwidth="2"];
+"Kanhaiya Nagar" -- "Inderlok" [label="1.2",color=red ,penwidth="2"];
+"Inderlok" -- "Shastri Nagar" [label="1.2",color=red ,penwidth="2"];
+"Shastri Nagar" -- "Pratap Nagar" [label="1.7",color=red ,penwidth="2"];
+"Pratap Nagar" -- "Pulbangash" [label="0.8",color=red ,penwidth="2"];
+"Pulbangash" -- "Tis Hazari" [label="0.9",color=red ,penwidth="2"];
+"Tis Hazari" -- "Kashmere Gate" [label="1.1",color=red ,penwidth="2"];
+"Kashmere Gate" -- "Shastri Park" [label="2.2",color=red ,penwidth="2"];
+"Shastri Park" -- "Seelampur" [label="1.6",color=red ,penwidth="2"];
+"Seelampur" -- "Welcome" [label="1.1",color=red ,penwidth="2"];
 
 //blue
-"Rajouri Garden" -- "Ramesh Nagar" [label="1",color=blue ,penwidth="5"];
-"Ramesh Nagar" -- "Moti Nagar" [label="1.2",color=blue ,penwidth="5"];
-"Moti Nagar" -- "Kirti Nagar" [label="1",color=blue ,penwidth="5"];
-"Kirti Nagar" -- "Shadipur" [label="0.7",color=blue ,penwidth="5"];
-"Shadipur" -- "Patel Nagar" [label="1.3",color=blue ,penwidth="5"];
-"Patel Nagar" -- "Rajender Place" [label="0.9",color=blue ,penwidth="5"];
-"Rajender Place" -- "Karol Bagh" [label="1",color=blue ,penwidth="5"];
-"Karol Bagh" -- "Rajiv Chowk" [label="3.4",color=blue ,penwidth="5"];
-"Rajiv Chowk" -- "Barakhamba Road" [label="0.7",color=blue ,penwidth="5"];
-"Barakhamba Road" -- "Mandi House" [label="1",color=blue ,penwidth="5"];
-"Mandi House" -- "Pragati Maiden" [label="0.8",color=blue ,penwidth="5"];
-"Pragati Maiden" -- "Inderprastha" [label="0.8",color=blue ,penwidth="5"];
-"Inderprastha" -- "Yamuna Bank" [label="1.8",color=blue ,penwidth="5"];
+"Rajouri Garden" -- "Ramesh Nagar" [label="1",color=blue ,penwidth="2"];
+"Ramesh Nagar" -- "Moti Nagar" [label="1.2",color=blue ,penwidth="2"];
+"Moti Nagar" -- "Kirti Nagar" [label="1",color=blue ,penwidth="2"];
+"Kirti Nagar" -- "Shadipur" [label="0.7",color=blue ,penwidth="2"];
+"Shadipur" -- "Patel Nagar" [label="1.3",color=blue ,penwidth="2"];
+"Patel Nagar" -- "Rajender Place" [label="0.9",color=blue ,penwidth="2"];
+"Rajender Place" -- "Karol Bagh" [label="1",color=blue ,penwidth="2"];
+"Karol Bagh" -- "Rajiv Chowk" [label="3.4",color=blue ,penwidth="2"];
+"Rajiv Chowk" -- "Barakhamba Road" [label="0.7",color=blue ,penwidth="2"];
+"Barakhamba Road" -- "Mandi House" [label="1",color=blue ,penwidth="2"];
+"Mandi House" -- "Pragati Maiden" [label="0.8",color=blue ,penwidth="2"];
+"Pragati Maiden" -- "Inderprastha" [label="0.8",color=blue ,penwidth="2"];
+"Inderprastha" -- "Yamuna Bank" [label="1.8",color=blue ,penwidth="2"];
+"Yamuna Bank" -- "Laxmi Nagar" [label="1.3", color=blue, penwidth=2];
+"Laxmi Nagar" -- "Nirman Vihar" [label="1.1", color=blue, penwidth=2];
+"Nirman Vihar" -- "Preet Vihar" [label="1.0", color=blue, penwidth=2];
+"Preet Vihar" -- "Karkar Duma" [label="1.2", color=blue, penwidth=2];
+"Karkar Duma" -- "Anand Vihar" [label="1.1", color=blue, penwidth=2];
+"Anand Vihar" -- "Kaushambi" [label="0.8", color=blue, penwidth=2];
+"Kaushambi" -- "Vaishali" [label="1.6", color=blue, penwidth=2];
+"Yamuna Bank" -- "Akshardham" [label="1.3", color=blue, penwidth=2];
+"Akshardham" -- "Mayur Vihar Phase-1" [label="1.8", color=blue, penwidth=2];
+"Mayur Vihar Phase-1" -- "Mayur Vihar Extention" [label="1.2", color=blue, penwidth=2];
+"Mayur Vihar Extention" -- "New Ashok Nagar" [label="0.9", color=blue, penwidth=2];
+"New Ashok Nagar" -- "Noida Sector-15" [label="1.0", color=blue, penwidth=2];
+"Noida Sector-15" -- "Noida Sector-16" [label="1.1", color=blue, penwidth=2];
+"Noida Sector-16" -- "Noida Sector-18" [label="1.1", color=blue, penwidth=2];
+"Noida Sector-18" -- "Botanical Garden" [label="1.1", color=blue, penwidth=2];
+"Botanical Garden" -- "Golf Course" [label="1.2", color=blue, penwidth=2];
+"Golf Course" -- "Noida City Center" [label="1.3", color=blue, penwidth=2];
+
 
 //green
-"Madipur" -- "Shivaji Park" [label="1.1",color=green ,penwidth="5"];
-"Shivaji Park" -- "Punjabi Bagh" [label="1.6",color=green ,penwidth="5"];
-"Punjabi Bagh" -- "Ashok Park" [label="0.9",color=green ,penwidth="5"];
-"Ashok Park" -- "Inderlok" [label="1.4",color=green ,penwidth="5"];
-"Ashok Park" -- "Sat Guru Ram Singh Marg"  [label="1.1",color=green ,penwidth="5"];
-"Sat Guru Ram Singh Marg" -- "Kirti Nagar" [label="1",color=green ,penwidth="5"];
+"Madipur" -- "Shivaji Park" [label="1.1",color=green ,penwidth="2"];
+"Shivaji Park" -- "Punjabi Bagh" [label="1.6",color=green ,penwidth="2"];
+"Punjabi Bagh" -- "Ashok Park" [label="0.9",color=green ,penwidth="2"];
+"Ashok Park" -- "Inderlok" [label="1.4",color=green ,penwidth="2"];
+"Ashok Park" -- "Sant Guru Ram Singh Marg" [label="1.1",color=green ,penwidth="2"];
+"Sant Guru Ram Singh Marg" -- "Kirti Nagar" [label="1",color=green ,penwidth="2"];
+"Kashmere Gate" -- "Lal Qila" [label="1.5",color=green ,penwidth="2"];
+"Lal Qila" -- "Jama Masjid" [label="0.8",color=green ,penwidth="2"];
+"Jama Masjid" -- "Delhi Gate" [label="1.4",color=green ,penwidth="2"];
+"Delhi Gate" -- "ITO" [label="1.3",color=green ,penwidth="2"];
+"ITO" -- "Mandi House" [label="0.8",color=green ,penwidth="2"];
+"Mandi House" -- "Janptah" [label="1.4",color=green ,penwidth="2"];
+"Janptah" -- "Central Secretariat" [label="1.3",color=green ,penwidth="2"];
+"Central Secretariat" -- "Khan Market" [label="2.1",color=green ,penwidth="2"];
+"Khan Market" -- "JL Nehru Stadium" [label="1.4",color=green ,penwidth="2"];
+"JL Nehru Stadium" -- "Jangpura" [label="0.9",color=green ,penwidth="2"];
 
-//violet
-"Kashmere Gate" -- "Lal Qila" [label="1.5",color=violet ,penwidth="5"];
-"Lal Qila" -- "Jama Masjid" [label="0.8",color=violet ,penwidth="5"];
-"Jama Masjid" -- "Delhi Gate" [label="1.4",color=violet ,penwidth="5"];
-"Delhi Gate" -- "ITO" [label="1.3",color=violet ,penwidth="5"];
-"ITO" -- "Mandi House" [label="0.8",color=violet ,penwidth="5"];
-"Mandi House" -- "Janptah" [label="1.4",color=violet ,penwidth="5"];
-"Janptah" -- "Central Secretariat" [label="1.3",color=violet ,penwidth="5"];
-"Central Secretariat" -- "Khan Market" [label="2.1",color=violet ,penwidth="5"];
-"Khan Market" -- "JL Nehru Stadium" [label="1.4",color=violet ,penwidth="5"];
-"JL Nehru Stadium" -- "Jangpura" [label="0.9",color=violet ,penwidth="5"];
- 
- //yellow
-"Vishwavidalaya" -- "Vidhan Sabha" [label="1",color=yellow ,penwidth="5"];
-"Vidhan Sabha" -- "Civil Lines" [label="1.3",color=yellow ,penwidth="5"];
-"Civil Lines" -- "Kashmere Gate" [label="1.1",color=yellow ,penwidth="5"];
-"Kashmere Gate" -- "Chandni Chowk" [label="1.1",color=yellow ,penwidth="5"];
-"Chandni Chowk" -- "Chawri Bazar" [label="1",color=yellow ,penwidth="5"];
-"Chawri Bazar" -- "New Delhi" [label="0.8",color=yellow ,penwidth="5"];
-"New Delhi" -- "Rajiv Chowk" [label="1.1",color=yellow ,penwidth="5"];
-"Rajiv Chowk" -- "Patel Chowk" [label="1.3",color=yellow ,penwidth="5"];
-"Patel Chowk" -- "Central Secretariat" [label="0.9",color=yellow ,penwidth="5"];
-"Central Secretariat" -- "Udyog Bhawan" [label="0.3",color=yellow ,penwidth="5"];
-"Udyog Bhawan" -- "Lok Kalyan Marg" [label="1.6",color=yellow ,penwidth="5"];
-"Lok Kalyan Marg" -- "Jor Bagh" [label="1.2",color=yellow ,penwidth="5"];
+//yellow
+"Vishwavidyalaya" -- "Vidhan Sabha" [label="1",color=yellow ,penwidth="2"];
+"Vidhan Sabha" -- "Civil Lines" [label="1.3",color=yellow ,penwidth="2"];
+"Civil Lines" -- "Kashmere Gate" [label="1.1",color=yellow ,penwidth="2"];
+"Kashmere Gate" -- "Chandni Chowk" [label="1.1",color=yellow ,penwidth="2"];
+"Chandni Chowk" -- "Chawri Bazar" [label="1",color=yellow ,penwidth="2"];
+"Chawri Bazar" -- "New Delhi" [label="0.8",color=yellow ,penwidth="2"];
+"New Delhi" -- "Rajiv Chowk" [label="1.1",color=yellow ,penwidth="2"];
+"Rajiv Chowk" -- "Patel Chowk" [label="1.3",color=yellow ,penwidth="2"];
+"Patel Chowk" -- "Central Secretariat" [label="0.9",color=yellow ,penwidth="2"];
+"Central Secretariat" -- "Udyog Bhawan" [label="0.3",color=yellow ,penwidth="2"];
+"Udyog Bhawan" -- "Lok Kalyan Marg" [label="1.6",color=yellow ,penwidth="2"];
+"Lok Kalyan Marg" -- "Jor Bagh" [label="1.2",color=yellow ,penwidth="2"];
+
+
+"Samaypur Badli" -- "Rohini Sector - 18" [label="0.8", color=yellow, penwidth=2];
+"Rohini Sector - 18" -- "Haiderpur Badli Mor" [label="1.3", color=yellow, penwidth=2];
+"Haiderpur Badli Mor" -- "Jahangirpuri" [label="1.3", color=yellow, penwidth=2];
+"Jahangirpuri" -- "Adarsh Nagar" [label="1.3", color=yellow, penwidth=2];
+"Adarsh Nagar" -- "Azadpur" [label="1.5", color=yellow, penwidth=2];
+"Azadpur" -- "Model Town" [label="1.4", color=yellow, penwidth=2];
+"Model Town" -- "GTB Nagar" [label="1.4", color=yellow, penwidth=2];
+"GTB Nagar" -- "Vishwavidyalaya" [label="0.8", color=yellow, penwidth=2];
+"Jor Bagh" -- "INA" [label="1.3", color=yellow, penwidth=2];
+"INA" -- "AIIMS" [label="0.8", color=yellow, penwidth=2];
+"AIIMS" -- "Green Park" [label="1.0", color=yellow, penwidth=2];
+"Green Park" -- "Hauz Khas" [label="1.8", color=yellow, penwidth=2];
+"Hauz Khas" -- "Malviya Nagar" [label="1.7", color=yellow, penwidth=2];
+"Malviya Nagar" -- "Saket" [label="0.9", color=yellow, penwidth=2];
+"Saket" -- "Qutab Minar" [label="1.7", color=yellow, penwidth=2];
+"Qutab Minar" -- "Chhattarpur" [label="1.3", color=yellow, penwidth=2];
+"Chhattarpur" -- "Sultanpur" [label="1.6", color=yellow, penwidth=2];
+"Sultanpur" -- "Ghitorni" [label="1.3", color=yellow, penwidth=2];
+"Ghitorni" -- "Arjan Garh" [label="2.7", color=yellow, penwidth=2];
+"Arjan Garh" -- "Guru Dronacharya" [label="2.3", color=yellow, penwidth=2];
+"Guru Dronacharya" -- "Sikandarpur" [label="1.0", color=yellow, penwidth=2];
+"Sikandarpur" -- "MG Road" [label="1.2", color=yellow, penwidth=2];
+"MG Road" -- "IFFCO Chowk" [label="1.1", color=yellow, penwidth=2];
+"IFFCO Chowk" -- "Huda City Centre" [label="1.5", color=yellow, penwidth=2];
 }
