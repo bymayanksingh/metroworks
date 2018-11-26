@@ -1,0 +1,53 @@
+Rithala,Netaji Subhash Place,5.2
+Netaji Subhash Place,Keshav Puram,1.2
+Keshav Puram,Kanhaiya Nagar,0.8
+Kanhaiya Nagar,Inderlok,1.2
+Inderlok,Shastri Nagar,1.2
+Shastri Nagar,Pratap Nagar,1.7
+Pratap Nagar,Pulbangash,0.8
+Pulbangash,Tis Hazari,0.9
+Tis Hazari,Kashmere Gate,1.1
+Kashmere Gate,Shastri Park,2.2
+Shastri Park,Seelampur,1.6
+Seelampur,Welcome,1.1
+Rajouri Garden,Ramesh Nagar,1
+Ramesh Nagar,Moti Nagar,1.2
+Moti Nagar,Kirti Nagar,1
+Kirti Nagar,Shadipur,0.7
+Shadipur,Patel Nagar,1.3
+Patel Nagar,Rajender Place,0.9
+Rajender Place,Karol Bagh,1
+Karol Bagh,Rajiv Chowk,3.4
+Rajiv Chowk,Barakhamba Road,0.7
+Barakhamba Road,Mandi House,1
+Mandi House,Pragati Maiden,0.8
+Pragati Maiden,Inderprastha,0.8
+Inderprastha,Yamuna Bank,1.8
+Madipur,Shivaji Park,1.1
+Shivaji Park,Punjabi Bagh,1.6
+Punjabi Bagh,Ashok Park,0.9
+Ashok Park,Inderlok,1.4
+Ashok Park,Sant Guru Ram Singh Marg,1.1
+Sant Guru Ram Singh Marg,Kirti Nagar,1
+Kashmere Gate,Lal Qila,1.5
+Lal Qila,Jama Masjid,0.8
+Jama Masjid,Delhi Gate,1.4
+Delhi Gate,ITO,1.3
+ITO,Mandi House,0.8
+Mandi House,Janptah,1.4
+Janptah,Central Secretariat,1.3
+Central Secretariat,Khan Market,2.1
+Khan Market,JL Nehru Stadium,1.4
+JL Nehru Stadium,Jangpura,0.9
+Vishwavidalaya,Vidhan Sabha,1
+Vidhan Sabha,Civil Lines,1.3
+Civil Lines,Kashmere Gate,1.1
+Kashmere Gate,Chandni Chowk,1.1
+Chandni Chowk,Chawri Bazar,1
+Chawri Bazar,New Delhi,0.8
+New Delhi,Rajiv Chowk,1.1
+Rajiv Chowk,Patel Chowk,1.3
+Patel Chowk,Central Secretariat,0.9
+Central Secretariat,Udyog Bhawan,0.3
+Udyog Bhawan,Lok Kalyan Marg,1.6
+Lok Kalyan Marg,Jor Bagh,1.2
