@@ -6,7 +6,6 @@ using namespace std;
 template<typename T>
 class Graph
 {
-
     map<T, list<pair<T,float> > > m;
 public:
     list<T> path;
