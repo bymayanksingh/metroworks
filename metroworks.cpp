@@ -303,7 +303,7 @@ void Graph<T>::dijsktraSSSP(T src, map<T,float> &dist, map<T,T> &prev)
 }
 
 int main()
-{   system("notify-send -t 5000 -i /home/nightwarrior-xxx/Documents/MetroWorksDS/train1.png \"Metro Works\"");
+{   system("notify-send -t 5000 -i ~/MetroWorksDS/train1.png \"Metro Works\"");
     system("gnome-terminal -x sh -c \"fim --autowindow graph.png\"");
     system("clear");
     //system("printf '\e[45;5;196m'");
