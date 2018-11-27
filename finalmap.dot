@@ -2,15 +2,15 @@ graph G {
 node [shape=rect,dpi=600] margin=0.75
 
 //red
-"Rithala" -- "Netaji Subhash Place" [label="5.2",color=red ,penwidth="2"];
-"Netaji Subhash Place" -- "Keshav Puram" [label="1.2",color=red ,penwidth="2"];
-"Keshav Puram" -- "Kanhaiya Nagar" [label="0.8",color=red ,penwidth="2"];
-"Kanhaiya Nagar" -- "Inderlok" [label="1.2",color=red ,penwidth="2"];
-"Inderlok" -- "Shastri Nagar" [label="1.2",color=red ,penwidth="2"];
-"Shastri Nagar" -- "Pratap Nagar" [label="1.7",color=red ,penwidth="2"];
-"Pratap Nagar" -- "Pulbangash" [label="0.8",color=red ,penwidth="2"];
-"Pulbangash" -- "Tis Hazari" [label="0.9",color=red ,penwidth="2"];
-"Tis Hazari" -- "Kashmere Gate" [label="1.1",color=red ,penwidth="2"];
+"Rithala" -- "Netaji Subhash Place" [label="5.2",color=red ,penwidth="8"];
+"Netaji Subhash Place" -- "Keshav Puram" [label="1.2",color=red ,penwidth="8"];
+"Keshav Puram" -- "Kanhaiya Nagar" [label="0.8",color=red ,penwidth="8"];
+"Kanhaiya Nagar" -- "Inderlok" [label="1.2",color=red ,penwidth="8"];
+"Inderlok" -- "Shastri Nagar" [label="1.2",color=red ,penwidth="8"];
+"Shastri Nagar" -- "Pratap Nagar" [label="1.7",color=red ,penwidth="8"];
+"Pratap Nagar" -- "Pulbangash" [label="0.8",color=red ,penwidth="8"];
+"Pulbangash" -- "Tis Hazari" [label="0.9",color=red ,penwidth="8"];
+"Tis Hazari" -- "Kashmere Gate" [label="1.1",color=red ,penwidth="8"];
 "Kashmere Gate" -- "Shastri Park" [label="2.2",color=red ,penwidth="2"];
 "Shastri Park" -- "Seelampur" [label="1.6",color=red ,penwidth="2"];
 "Seelampur" -- "Welcome" [label="1.1",color=red ,penwidth="2"];
@@ -69,10 +69,10 @@ node [shape=rect,dpi=600] margin=0.75
 "Vishwavidyalaya" -- "Vidhan Sabha" [label="1",color=yellow ,penwidth="2"];
 "Vidhan Sabha" -- "Civil Lines" [label="1.3",color=yellow ,penwidth="2"];
 "Civil Lines" -- "Kashmere Gate" [label="1.1",color=yellow ,penwidth="2"];
-"Kashmere Gate" -- "Chandni Chowk" [label="1.1",color=yellow ,penwidth="2"];
-"Chandni Chowk" -- "Chawri Bazar" [label="1",color=yellow ,penwidth="2"];
-"Chawri Bazar" -- "New Delhi" [label="0.8",color=yellow ,penwidth="2"];
-"New Delhi" -- "Rajiv Chowk" [label="1.1",color=yellow ,penwidth="2"];
+"Kashmere Gate" -- "Chandni Chowk" [label="1.1",color=yellow ,penwidth="8"];
+"Chandni Chowk" -- "Chawri Bazar" [label="1",color=yellow ,penwidth="8"];
+"Chawri Bazar" -- "New Delhi" [label="0.8",color=yellow ,penwidth="8"];
+"New Delhi" -- "Rajiv Chowk" [label="1.1",color=yellow ,penwidth="8"];
 "Rajiv Chowk" -- "Patel Chowk" [label="1.3",color=yellow ,penwidth="2"];
 "Patel Chowk" -- "Central Secretariat" [label="0.9",color=yellow ,penwidth="2"];
 "Central Secretariat" -- "Udyog Bhawan" [label="0.3",color=yellow ,penwidth="2"];

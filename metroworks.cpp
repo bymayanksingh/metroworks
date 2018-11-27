@@ -236,7 +236,6 @@ bool Graph<T>::printAdj(string src,string dest)
                 f++;
             }
         }
-        cout<<endl;
     }
     if(f>1)
         return true;
@@ -435,8 +434,9 @@ int main()
     bool res=Metro.printAdj(sourcestn,deststn);
     if(res==false)
     {
-        cout<<"Invalid Station";
-        return 0;
+      system("zenity --error --title \"Error Occured\" --text='Invalid Station Entered'");
+      system("clear");
+      return 0;
     }
 
     //system("echo \"\e[92m\"");
