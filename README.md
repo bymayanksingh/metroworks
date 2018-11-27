@@ -21,5 +21,3 @@ MetroWorks! - Data Structures Project (Semester 3)
 
 ##### Books
 - http://www-cs.ccny.cuny.edu/~wolberg/cs221/qt/books/C++-GUI-Programming-with-Qt-4-1st-ed.pdf
-
-
