@@ -198,12 +198,12 @@ void Graph<T>::makedotfile()
             f=1;
             clr="blue";
         }
-        else if(a=="Inderprastha" && f==0)
+        else if(a=="Golf Course" && f==0)
         {
             f=1;
             clr="green";
         }
-        else if(a=="Sat Guru Ram Singh Marg" && f==0)
+        else if(a=="Sant Guru Ram Singh Marg" && f==0)
         {
             f=1;
             clr="violet";
