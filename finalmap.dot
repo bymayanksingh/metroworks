@@ -30,12 +30,12 @@ node [shape=rect,dpi=600] margin=0.75
 "Pragati Maiden" -- "Inderprastha" [label="0.8",color=blue ,penwidth="8"];
 "Inderprastha" -- "Yamuna Bank" [label="1.8",color=blue ,penwidth="8"];
 "Yamuna Bank" -- "Laxmi Nagar" [label="1.3",color=blue ,penwidth="8"];
-"Laxmi Nagar" -- "Nirman Vihar" [label="1.1",color=blue ,penwidth="2"];
-"Nirman Vihar" -- "Preet Vihar" [label="1.0",color=blue ,penwidth="2"];
-"Preet Vihar" -- "Karkar Duma" [label="1.2",color=blue ,penwidth="2"];
-"Karkar Duma" -- "Anand Vihar" [label="1.1",color=blue ,penwidth="2"];
-"Anand Vihar" -- "Kaushambi" [label="0.8",color=blue ,penwidth="2"];
-"Kaushambi" -- "Vaishali" [label="1.6",color=blue ,penwidth="2"];
+"Laxmi Nagar" -- "Nirman Vihar" [label="1.1",color=blue ,penwidth="8"];
+"Nirman Vihar" -- "Preet Vihar" [label="1.0",color=blue ,penwidth="8"];
+"Preet Vihar" -- "Karkar Duma" [label="1.2",color=blue ,penwidth="8"];
+"Karkar Duma" -- "Anand Vihar" [label="1.1",color=blue ,penwidth="8"];
+"Anand Vihar" -- "Kaushambi" [label="0.8",color=blue ,penwidth="8"];
+"Kaushambi" -- "Vaishali" [label="1.6",color=blue ,penwidth="8"];
 "Yamuna Bank" -- "Akshardham" [label="1.3",color=blue ,penwidth="2"];
 "Akshardham" -- "Mayur Vihar Phase-1" [label="1.8",color=blue ,penwidth="2"];
 "Mayur Vihar Phase-1" -- "Mayur Vihar Extention" [label="1.2",color=blue ,penwidth="2"];
