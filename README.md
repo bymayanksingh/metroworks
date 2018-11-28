@@ -27,7 +27,7 @@ Please install these before running the project. <br />
 ## Authors
 
 * **Mayank Singh** - [code-monk08](https://github.com/code-monk08)
-* **Siddhant Trivedi** - [sidntrivedi012](https://github.com/sidntrivedi012)
+* **Siddhant N Trivedi** - [sidntrivedi012](https://github.com/sidntrivedi012)
 * **Aman Verma** - [nightwarrior-xxx](https://github.com/nightwarrior-xxx)
 * **Aditya Raushan** - [araushan](https://github.com/araushan)
 
@@ -41,11 +41,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * [Wikipedia](https://www.wikipedia.org/)
 
 ## Screenshots
-![Opening Window](https://github.com/code-monk08/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-53-27.png)
+![Opening Window](https://github.com/rapport4/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-53-27.png)
 
-![Main Window with the full map on the left.](https://github.com/code-monk08/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-53-32.png)
+![Main Window with the full map on the left.](https://github.com/rapport4/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-53-32.png)
 
-![Window showing the shortest path broadened on map with the fare on the console screen.](https://github.com/code-monk08/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-57-26.png)
+![Window showing the shortest path broadened on map with the fare on the console screen.](https://github.com/rapport4/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-57-26.png)
 
 ### Current Delhi Metro Stations (In our Program)
 ![Delhi Metro Stations](https://raw.githubusercontent.com/rapport4/MetroWorksDS/master/graph.png)
