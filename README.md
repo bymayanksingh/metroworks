@@ -18,7 +18,7 @@ Please install these before running the project. <br />
 [sl](http://manpages.ubuntu.com/manpages/trusty/man6/sl.6.html)          : sudo apt-get install sl <br />
 [notify-send](http://manpages.ubuntu.com/manpages/xenial/man1/notify-send.1.html) : sudo apt-get install notify-osd <br />
 
-## Built With
+## Tools and Libraries Used
 
 * [graphviz](http://www.graphviz.org/) -Open Source Graph Visualtization Software
 * [vscode](https://code.visualstudio.com/) - Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running and version control
@@ -39,6 +39,11 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * [DMRC](http://www.delhimetrorail.com/)
 * [Wikipedia](https://www.wikipedia.org/)
+
+## Screenshots
+![Opening Window](https://github.com/code-monk08/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-53-27.png)
+![Main Window with the full map on the left.](https://github.com/code-monk08/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-53-32.png)
+![Window showing the shortest path broadened on map with the fare on the console screen.](https://github.com/code-monk08/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-57-26.png)
 
 ### Current Delhi Metro Stations (In our Program)
 ![Delhi Metro Stations](https://raw.githubusercontent.com/rapport4/MetroWorksDS/master/graph.png)
