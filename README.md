@@ -1,53 +1,118 @@
+<p align="center">
+  <img src="./images/logo/connect4.png" width="420">
+</p>
 
-# MetroWorksDS
+[![Open Issues](https://img.shields.io/github/issues/code-monk08/metroworks?style=for-the-badge&logo=github)](https://github.com/code-monk08/metroworks/issues)  [![Forks](https://img.shields.io/github/forks/code-monk08/metroworks?style=for-the-badge&logo=github)](https://github.com/code-monk08/metroworks/network/members)  [![Stars](https://img.shields.io/github/stars/code-monk08/metroworks?style=for-the-badge&logo=reverbnation)](https://github.com/code-monk08/metroworks/stargazers)  ![Maintained](https://img.shields.io/maintenance/no/2019?style=for-the-badge&logo=github)  ![Made with Python](https://img.shields.io/badge/Made%20with-Python-blueviolet?style=for-the-badge&logo=c++)  ![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%99%A5-red?style=for-the-badge&logo=open-source-initiative)  ![Built with Love](https://img.shields.io/badge/Built%20With-%E2%99%A5-critical?style=for-the-badge&logo=ko-fi)  [![Follow Me](https://img.shields.io/twitter/follow/codemonk08_?color=blue&label=Follow%20%40codemonk08_&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?screen_name=codemonk08_)  [![Telegram](https://img.shields.io/badge/Telegram-Chat-informational?style=for-the-badge&logo=telegram)](https://telegram.me/codemonk08)
 
-An application meant for linux users, It helps you find & visualize the Shortest Path between Delhi Metro Stations, it uses graph data structure & Dijkstra's Algorithm.
+## :ledger: Index
 
-## Getting Started
+- [About](#beginner-about)
+- [Usage](#zap-usage)
+  - [Installation](#electric_plug-installation)
+  - [Tools](#package-tools)
+  - [Commands](#electric_plug-commands)
+- [File Structure](#file_folder-file-structure)
+- [Resources](#page_facing_up-resources)
+- [Gallery](#camera-gallery)
+- [Credit/Acknowledgment](#star2-creditacknowledgment)
+- [License](#lock-license)
 
-### Prerequisites
+##  :beginner: About
+Metroworks in an application meant for linux users, It helps you find & visualize the Shortest Path between Delhi Metro Stations, it uses Graph Data Structure & Dijkstra's Algorithm.
 
-c++11 : compile metroworks.cpp using -std=c++11 flag.
+## :zap: Usage
+To use this project.
 
-### Dependencies
+###  :electric_plug: Installation
+- Install dependencies & export environment variables.
 
-Please install these before running the project. <br />
-[graphviz](http://www.graphviz.org/)    : sudo apt-get install graphviz <br />
-[fim](http://manpages.ubuntu.com/manpages/xenial/man1/fim.1.html)         : sudo apt-get install fim <br />
-[zenity](https://packages.ubuntu.com/trusty/gnome/zenity)    : sudo apt-get install zenity <br />
-[sl](http://manpages.ubuntu.com/manpages/trusty/man6/sl.6.html)          : sudo apt-get install sl <br />
-[notify-send](http://manpages.ubuntu.com/manpages/xenial/man1/notify-send.1.html) : sudo apt-get install notify-osd <br />
+```bash
+$ sudo apt-get install graphviz 
+$ sudo apt-get install fim
+$ sudo apt-get install zenity
+$ sudo apt-get install sl
+$ sudo apt-get install notify-osd 
+```
+###  :package: Tools
+  - [graphviz](http://www.graphviz.org/)
+  - [fim](http://manpages.ubuntu.com/manpages/xenial/man1/fim.1.html)
+  - [zenity](https://packages.ubuntu.com/trusty/gnome/zenity) 
+  - [sl](http://manpages.ubuntu.com/manpages/trusty/man6/sl.6.html)
+  - [notify-send](http://manpages.ubuntu.com/manpages/xenial/man1/notify-send.1.html) 
 
-## Tools and Libraries Used
+###  :electric_plug: Commands
+- Start project using
+```bash
+$ g++ -std=c++11 metroworks.cpp -o metroworks
+$ ./metroworks
+```
 
-* [graphviz](http://www.graphviz.org/) -Open Source Graph Visualtization Software
-* [vscode](https://code.visualstudio.com/) - Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running and version control
-* [ubuntu 16.04](http://releases.ubuntu.com/16.04/) - Ubuntu is a complete Linux operating system, freely available with both community and professional support. 
+##  :file_folder: File Structure
+- Add a file structure here with the basic details about files, below is an example.
 
-## Authors
+```
+.
+├── _config.yml
+├── data.txt
+├── fare.csv
+├── Fare data
+│   └── Fare Matrix Delhi Metro.xlsx
+├── finalmap.dot
+├── graph.png
+├── graphvizdotfiles
+│   ├── graph.png
+│   ├── MyGraph
+│   ├── path.png
+│   └── StationId
+├── LICENSE
+├── maps
+│   ├── Delhi Metro System Map.svg
+│   ├── graph.svg
+│   ├── id.svg
+│   └── this graph test signature shape from graphviz.svg
+├── metroworks.cpp
+├── path.png
+├── README2.md
+├── README.md
+├── Report & Screenshots
+│   ├── DS_MetroWork_Project.pdf
+│   ├── Screenshot from 2018-11-27 03-53-27.png
+│   ├── Screenshot from 2018-11-27 03-53-32.png
+│   └── Screenshot from 2018-11-27 03-57-26.png
+├── stations.txt
+├── train1.png
+└── train.png
 
-* **Mayank Singh** - [code-monk08](https://github.com/code-monk08)
-* **Siddhant N Trivedi** - [sidntrivedi012](https://github.com/sidntrivedi012)
-* **Aman Verma** - [nightwarrior-xxx](https://github.com/nightwarrior-xxx)
-* **Aditya Raushan** - [araushan](https://github.com/araushan)
+4 directories, 26 files
+```
 
-## License
+##  :page_facing_up: Resources
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+- [DMRC](http://www.delhimetrorail.com/)
 
-## Acknowledgments
+##  :camera: Gallery
+<p align="center">
+  <img src="./images/screenshots/1.png" width="800">
+</p>
 
-* [DMRC](http://www.delhimetrorail.com/)
-* [Wikipedia](https://www.wikipedia.org/)
+<p align="center">
+  <img src="./images/screenshots/2.png" width="800">
+</p>
 
-## Screenshots
-![Opening Window](https://github.com/rapport4/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-53-27.png)
-
-![Main Window with the full map on the left.](https://github.com/rapport4/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-53-32.png)
-
-![Window showing the shortest path broadened on map with the fare on the console screen.](https://github.com/rapport4/MetroWorksDS/blob/master/Report%20%26%20Screenshots/Screenshot%20from%202018-11-27%2003-57-26.png)
+<p align="center">
+  <img src="./images/screenshots/3.png" width="800">
+</p>
 
 ### Current Delhi Metro Stations (In our Program)
-![Delhi Metro Stations](https://raw.githubusercontent.com/rapport4/MetroWorksDS/master/graph.png)
+<p align="center">
+  <img src="./graph.png" width="800">
+</p>
+
+
+## :star2: Credit/Acknowledgment
+[![Contributors](https://img.shields.io/github/contributors/code-monk08/metroworks?style=for-the-badge)](https://github.com/code-monk08/metroworks/graphs/contributors)
+
+##  :lock: License
+[![License](https://img.shields.io/github/license/code-monk08/metroworks?style=for-the-badge)](https://github.com/code-monk08/metroworks/blob/master/LICENSE)
 
 
