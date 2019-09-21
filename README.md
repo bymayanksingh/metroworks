@@ -72,7 +72,6 @@ $ ./metroworks
 │   └── this graph test signature shape from graphviz.svg
 ├── metroworks.cpp
 ├── path.png
-├── README2.md
 ├── README.md
 ├── Report & Screenshots
 │   ├── DS_MetroWork_Project.pdf
@@ -83,7 +82,7 @@ $ ./metroworks
 ├── train1.png
 └── train.png
 
-4 directories, 26 files
+4 directories, 25 files
 ```
 
 ##  :page_facing_up: Resources
