@@ -100,3 +100,4 @@ struct AutoRegister {
 } // namespace metroworks::test
 
 #endif // METROWORKS_TEST_RUNNER_HPP
+

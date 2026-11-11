@@ -53,3 +53,4 @@ private:
 } // namespace metroworks
 
 #endif // METROWORKS_FARE_CALCULATOR_HPP
+

@@ -25,6 +25,7 @@ TEST_SRCS = $(TEST_DIR)/test_main.cpp \
             $(TEST_DIR)/test_graph.cpp \
             $(TEST_DIR)/test_catalog.cpp \
             $(TEST_DIR)/test_fare.cpp \
+            $(TEST_DIR)/test_data_loader.cpp \
             $(TEST_DIR)/test_route_planner.cpp \
             $(TEST_DIR)/test_dot_exporter.cpp
 

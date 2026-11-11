@@ -67,3 +67,4 @@ TEST_CASE(GraphTest, RejectNegativeWeights) {
     }
     ASSERT_TRUE(caught);
 }
+

@@ -70,3 +70,4 @@ namespace color {
 } // namespace metroworks::utils
 
 #endif // METROWORKS_UTILS_HPP
+

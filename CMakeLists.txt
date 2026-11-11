@@ -39,9 +39,11 @@ add_executable(metroworks_test
     tests/test_graph.cpp
     tests/test_catalog.cpp
     tests/test_fare.cpp
+    tests/test_data_loader.cpp
     tests/test_route_planner.cpp
     tests/test_dot_exporter.cpp
 )
 target_include_directories(metroworks_test PRIVATE tests)
 target_link_libraries(metroworks_test PRIVATE metroworks_core)
 add_test(NAME AllTests COMMAND metroworks_test)
+

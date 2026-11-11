@@ -59,3 +59,4 @@ TEST_CASE(FareTest, MultiCandidateLookup) {
     // Candidate (1, 3) gives 30, candidate (2, 3) gives 40 -> min is 30
     ASSERT_EQ(*fare, 30);
 }
+

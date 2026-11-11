@@ -23,3 +23,4 @@ TEST_CASE(DotExporterTest, GenerateDotContainsHighlightedPath) {
     // Path edge should be styled with penwidth=5.0
     ASSERT_TRUE(dot.find("penwidth=5.0") != std::string::npos);
 }
+

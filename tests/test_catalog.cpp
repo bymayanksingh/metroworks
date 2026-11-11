@@ -18,6 +18,16 @@ TEST_CASE(CatalogTest, CaseInsensitiveLookup) {
     ASSERT_EQ(*name, "Rajiv Chowk");
 }
 
+TEST_CASE(CatalogTest, EmptyAndWhitespaceHandling) {
+    StationCatalog catalog;
+    catalog.addStation(1, "Rajiv Chowk");
+
+    ASSERT_FALSE(catalog.hasStation(""));
+    ASSERT_FALSE(catalog.hasStation("   "));
+    ASSERT_FALSE(catalog.resolveCanonicalName("").has_value());
+    ASSERT_FALSE(catalog.resolveCanonicalName("   ").has_value());
+}
+
 TEST_CASE(CatalogTest, AliasResolution) {
     StationCatalog catalog;
     catalog.addStation(59, "Noida City Centre");
@@ -58,4 +68,14 @@ TEST_CASE(CatalogTest, TypoSuggestions) {
     auto suggestions = catalog.suggestStations("Rajiv Chwk", 2);
     ASSERT_FALSE(suggestions.empty());
     ASSERT_EQ(suggestions[0], "Rajiv Chowk");
+}
+
+TEST_CASE(CatalogTest, ClearCatalog) {
+    StationCatalog catalog;
+    catalog.addStation(1, "Rajiv Chowk");
+    ASSERT_EQ(catalog.size(), 1);
+
+    catalog.clear();
+    ASSERT_EQ(catalog.size(), 0);
+    ASSERT_FALSE(catalog.hasStation("Rajiv Chowk"));
 }

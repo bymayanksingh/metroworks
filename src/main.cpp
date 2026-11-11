@@ -83,17 +83,37 @@ int main(int argc, char* argv[]) {
             jsonOutput = true;
         } else if (arg == "-V" || arg == "--visualize") {
             visualize = true;
-        } else if (arg == "--dot" && i + 1 < argc) {
-            dotOutPath = argv[++i];
-            hasDotExport = true;
-        } else if (arg == "--data-dir" && i + 1 < argc) {
-            dataDir = argv[++i];
-        } else if ((arg == "-s" || arg == "--source") && i + 1 < argc) {
-            source = argv[++i];
-        } else if ((arg == "-d" || arg == "--dest" || arg == "--destination") && i + 1 < argc) {
-            destination = argv[++i];
+        } else if (arg == "--dot") {
+            if (i + 1 < argc) {
+                dotOutPath = argv[++i];
+                hasDotExport = true;
+            } else {
+                std::cerr << "Error: --dot requires an output file path.\n";
+                return 1;
+            }
+        } else if (arg == "--data-dir") {
+            if (i + 1 < argc) {
+                dataDir = argv[++i];
+            } else {
+                std::cerr << "Error: --data-dir requires a directory path.\n";
+                return 1;
+            }
+        } else if (arg == "-s" || arg == "--source") {
+            if (i + 1 < argc) {
+                source = argv[++i];
+            } else {
+                std::cerr << "Error: " << arg << " requires a station name.\n";
+                return 1;
+            }
+        } else if (arg == "-d" || arg == "--dest" || arg == "--destination") {
+            if (i + 1 < argc) {
+                destination = argv[++i];
+            } else {
+                std::cerr << "Error: " << arg << " requires a station name.\n";
+                return 1;
+            }
         } else {
-            std::cerr << "Unknown or incomplete option: " << arg << "\n"
+            std::cerr << "Unknown option: " << arg << "\n"
                       << "Run '" << argv[0] << " --help' for usage.\n";
             return 1;
         }
@@ -223,3 +243,4 @@ int main(int argc, char* argv[]) {
 
     return route.found ? 0 : 1;
 }
+

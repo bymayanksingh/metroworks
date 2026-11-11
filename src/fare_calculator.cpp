@@ -69,3 +69,4 @@ size_t FareCalculator::colCount() const {
 }
 
 } // namespace metroworks
+

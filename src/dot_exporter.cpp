@@ -30,8 +30,8 @@ std::string DotExporter::generateDot(const MetroNetwork& network,
         destNode = routeResult->path.back();
 
         for (size_t i = 0; i + 1 < routeResult->path.size(); ++i) {
-            std::string u = utils::toLowerCase(routeResult->path[i]);
-            std::string v = utils::toLowerCase(routeResult->path[i + 1]);
+            std::string u = utils::toLowerCase(utils::trim(routeResult->path[i]));
+            std::string v = utils::toLowerCase(utils::trim(routeResult->path[i + 1]));
             if (u > v) std::swap(u, v);
             pathEdges.insert(u + "::" + v);
             pathNodes.insert(routeResult->path[i]);
@@ -63,8 +63,8 @@ std::string DotExporter::generateDot(const MetroNetwork& network,
     // Edges
     ss << "  // Metro Network Edges\n";
     for (const auto& edge : network.getAllEdges()) {
-        std::string uKey = utils::toLowerCase(edge.fromStation);
-        std::string vKey = utils::toLowerCase(edge.toStation);
+        std::string uKey = utils::toLowerCase(utils::trim(edge.fromStation));
+        std::string vKey = utils::toLowerCase(utils::trim(edge.toStation));
         if (uKey > vKey) std::swap(uKey, vKey);
 
         bool isOnPath = (pathEdges.find(uKey + "::" + vKey) != pathEdges.end());
@@ -145,3 +145,4 @@ bool DotExporter::openImageViewer(const std::string& imagePath) {
 }
 
 } // namespace metroworks
+

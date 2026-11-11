@@ -11,7 +11,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/C%2B%2B-17-blue.svg?style=for-the-badge&logo=c%2B%2B" alt="C++17">
   <img src="https://img.shields.io/badge/Build-CMake%20%7C%20Make-brightgreen?style=for-the-badge" alt="Build Systems">
-  <img src="https://img.shields.io/badge/Tests-18%20Passed-success?style=for-the-badge" alt="Tests">
+  <img src="https://img.shields.io/badge/Tests-27%20Passed-success?style=for-the-badge" alt="Tests">
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey?style=for-the-badge" alt="Platforms">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
 </p>
@@ -258,7 +258,7 @@ Output:
  RUNNING: [DotExporterTest] GenerateDotContainsHighlightedPath ... PASSED
 
 --------------------------------------------------
-Total Tests: 18 | Passed: 18 | Failed: 0
+Total Tests: 27 | Passed: 27 | Failed: 0
 --------------------------------------------------
 ```
 

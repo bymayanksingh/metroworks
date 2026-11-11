@@ -100,3 +100,4 @@ void StationCatalog::clear() {
 }
 
 } // namespace metroworks
+
