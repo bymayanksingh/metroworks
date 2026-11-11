@@ -18,6 +18,7 @@ TEST_CASE(DotExporterTest, GenerateDotContainsHighlightedPath) {
     std::string dot = DotExporter::generateDot(network, &route);
 
     ASSERT_TRUE(dot.find("graph DelhiMetro") != std::string::npos);
+    ASSERT_TRUE(dot.find("rankdir=TB") != std::string::npos);
     ASSERT_TRUE(dot.find("\"Rajiv Chowk\"") != std::string::npos);
     ASSERT_TRUE(dot.find("\"Mandi House\"") != std::string::npos);
     // Path edge should be styled with penwidth=5.0

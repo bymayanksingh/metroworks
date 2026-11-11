@@ -218,6 +218,20 @@ Options:
 ./bin/metroworks -s "HUDA City Centre" -d "Pragati Maidan"
 ```
 
+#### 4. Top-to-Bottom Route Diagram Visualization (Graphviz)
+
+Generate high-resolution top-to-bottom route diagrams with highlighted paths and interchange stations:
+
+```bash
+./bin/metroworks -s "Shaheed Sthal" -d "Millennium City Centre Gurugram" -V
+```
+
+MetroWorks exports the DOT network definition (`finalmap.dot`) in top-to-bottom vertical layout (`rankdir=TB`) and automatically renders a high-resolution PNG diagram (`path.png`):
+
+<p align="center">
+  <img src="./assets/diagrams/path.png" alt="MetroWorks Top-to-Bottom Route Visualization" width="450">
+</p>
+
 ---
 
 ## 🧪 Testing

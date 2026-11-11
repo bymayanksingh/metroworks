@@ -13,7 +13,7 @@ std::string DotExporter::generateDot(const MetroNetwork& network,
                                      const RouteResult* routeResult) {
     std::ostringstream ss;
     ss << "graph DelhiMetro {\n";
-    ss << "  graph [rankdir=LR, bgcolor=\"#FFFFFF\", dpi=300, margin=0.5];\n";
+    ss << "  graph [rankdir=TB, bgcolor=\"#FFFFFF\", dpi=300, margin=0.5];\n";
     ss << "  node [shape=box, style=\"rounded,filled\", fillcolor=\"#F5F5F5\", "
        << "color=\"#9E9E9E\", fontname=\"Helvetica,Arial,sans-serif\", fontsize=10, height=0.3];\n";
     ss << "  edge [fontname=\"Helvetica,Arial,sans-serif\", fontsize=8];\n\n";
