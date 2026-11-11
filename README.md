@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./images/logo/train.png" width="120">
+  <img src="./assets/logo/train.png" width="120">
 </p>
 
 <h1 align="center">MetroWorks</h1>
@@ -39,17 +39,21 @@ Originally conceived as a data structures academic project, MetroWorks has been 
 ```
 metroworks/
 ├── CMakeLists.txt                # Modern CMake build configuration
-├── Makefile                      # Portable Makefile (macOS & Linux)
-├── include/metroworks/           # Public C++ API headers
-│   ├── types.hpp                 # Core domain types (StationId, RouteResult, etc.)
-│   ├── graph.hpp                 # Generic Dijkstra & graph algorithm template
-│   ├── station.hpp               # Station catalog & fuzzy typo matching
-│   ├── fare_calculator.hpp       # Fare matrix lookup & bounds validation
-│   ├── metro_network.hpp         # Delhi Metro network & line topology
-│   ├── route_planner.hpp         # High-level route finding & transfer detection
-│   ├── data_loader.hpp           # Robust CSV/TSV data parsers
-│   ├── dot_exporter.hpp          # Graphviz DOT generator & safe renderer
-│   └── utils.hpp                 # String, Levenshtein & ANSI color helpers
+├── Makefile                      # Portable Unix Makefile
+├── README.md                     # Project documentation & usage
+├── LICENSE                       # MIT License
+├── .gitignore                    # Git ignore rules
+├── include/                      # Public C++ API headers
+│   └── metroworks/
+│       ├── types.hpp             # Core domain types (StationId, RouteResult, etc.)
+│       ├── graph.hpp             # Generic Dijkstra & graph algorithm template
+│       ├── station.hpp           # Station catalog & fuzzy typo matching
+│       ├── fare_calculator.hpp   # Fare matrix lookup & bounds validation
+│       ├── metro_network.hpp     # Delhi Metro network & line topology
+│       ├── route_planner.hpp     # High-level route finding & transfer detection
+│       ├── data_loader.hpp       # Robust CSV/TSV data parsers
+│       ├── dot_exporter.hpp      # Graphviz DOT generator & safe renderer
+│       └── utils.hpp             # String, Levenshtein & ANSI color helpers
 ├── src/                          # Implementation files
 │   ├── main.cpp                  # CLI application entry point
 │   ├── station.cpp
@@ -59,19 +63,33 @@ metroworks/
 │   ├── route_planner.cpp
 │   ├── dot_exporter.cpp
 │   └── utils.cpp
-├── tests/                        # Comprehensive test suite
+├── tests/                        # Comprehensive test suite (27 automated tests)
 │   ├── test_runner.hpp           # Zero-dependency test harness
 │   ├── test_main.cpp             # Test executable entry
 │   ├── test_graph.cpp            # Dijkstra algorithm unit tests
 │   ├── test_catalog.cpp          # Station catalog & alias tests
 │   ├── test_fare.cpp             # Fare calculator matrix tests
+│   ├── test_data_loader.cpp      # Data loader tests
 │   ├── test_route_planner.cpp    # End-to-end Delhi Metro route tests
 │   └── test_dot_exporter.cpp     # Graphviz export tests
-├── data/                         # Datasets
-│   ├── data.txt                  # Physical network connections & line boundaries
+├── data/                         # Delhi Metro datasets
 │   ├── stations.txt              # 235 Delhi Metro station IDs and names
-│   └── fare.csv                  # Official 235x235 fare matrix
-└── finalmap.dot                  # Sample Graphviz DOT route export
+│   ├── data.txt                  # Physical network connections & line boundaries
+│   ├── fare.csv                  # Processed 235x235 fare matrix
+│   └── raw/                      # Raw source data
+│       └── Fare Matrix Delhi Metro.xlsx
+├── docs/                         # Documentation, academic report & vector maps
+│   ├── DS_MetroWork_Project.pdf  # Course project report
+│   └── maps/                     # Vector SVG system maps
+├── assets/                       # Media, branding & diagrams
+│   ├── logo/
+│   │   ├── train.png
+│   │   └── train1.png
+│   ├── screenshots/              # Application screenshots
+│   └── diagrams/                 # Rendered network graphs
+└── legacy/                       # Archived v1 academic prototype
+    ├── metroworks_v1.cpp         # Original monolithic prototype
+    └── graphvizdotfiles/         # Original dot exploration files
 ```
 
 ---
