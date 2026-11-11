@@ -1,0 +1,5 @@
+title: MetroWorks
+description: "Production-Grade Delhi Metro Route Planner, Fare Calculator & Visualizer (Updated 2026)"
+theme: jekyll-theme-architect
+plugins:
+  - jemoji
