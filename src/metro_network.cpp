@@ -5,12 +5,16 @@
 namespace metroworks {
 
 MetroNetwork::MetroNetwork() {
-    // Register standard Delhi Metro lines
+    // Register standard Delhi Metro lines (2026 active lines)
     registerLine({"red", "Red Line", "#E53935", "red"});
+    registerLine({"yellow", "Yellow Line", "#FBC02D", "yellow"});
     registerLine({"blue", "Blue Line", "#1E88E5", "blue"});
     registerLine({"green", "Green Line", "#43A047", "green"});
     registerLine({"violet", "Violet Line", "#8E24AA", "violet"});
-    registerLine({"yellow", "Yellow Line", "#FBC02D", "yellow"});
+    registerLine({"orange", "Airport Express", "#FB8C00", "orange"});
+    registerLine({"magenta", "Magenta Line", "#D81B60", "magenta"});
+    registerLine({"pink", "Pink Line", "#EC407A", "pink"});
+    registerLine({"grey", "Grey Line", "#78909C", "gray"});
 }
 
 void MetroNetwork::registerLine(const LineInfo& line) {

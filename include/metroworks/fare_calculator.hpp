@@ -8,12 +8,23 @@
 
 namespace metroworks {
 
+struct FareBreakdown {
+    CurrencyInr standardFare{0};
+    CurrencyInr smartCardFare{0};
+    CurrencyInr sundayFare{0};
+};
+
 /**
- * @brief Thread-safe fare matrix calculator with bounds checking.
+ * @brief Thread-safe fare matrix calculator with bounds checking and 2026 distance slab evaluation.
  */
 class FareCalculator {
 public:
     FareCalculator() = default;
+
+    /**
+     * @brief Computes 2026 official DMRC fare breakdown directly from distance.
+     */
+    static FareBreakdown calculateFromDistance(DistanceKm distanceKm);
 
     /**
      * @brief Initializes the fare matrix.

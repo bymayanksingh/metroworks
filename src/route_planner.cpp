@@ -67,6 +67,8 @@ RouteResult RoutePlanner::findShortestRoute(const std::string& source,
         result.totalStops = 0;
         result.estimatedTimeMinutes = 0;
         result.fare = 0;
+        result.smartCardFare = 0;
+        result.sundayFare = 0;
         return result;
     }
 
@@ -128,10 +130,15 @@ RouteResult RoutePlanner::findShortestRoute(const std::string& source,
     int transferTimeMinutes = static_cast<int>(result.interchanges.size() * 5);
     result.estimatedTimeMinutes = std::max(2, travelTimeMinutes + transferTimeMinutes);
 
-    // 7. Calculate fare
+    // 7. Calculate 2026 official DMRC fare breakdown
+    auto breakdown = FareCalculator::calculateFromDistance(result.totalDistanceKm);
     auto srcIds = catalog.getStationIds(canonSrc);
     auto dstIds = catalog.getStationIds(canonDst);
-    result.fare = fareCalculator_.getFare(srcIds, dstIds);
+    auto matrixFare = fareCalculator_.getFare(srcIds, dstIds);
+
+    result.fare = matrixFare.has_value() ? *matrixFare : breakdown.standardFare;
+    result.smartCardFare = breakdown.smartCardFare;
+    result.sundayFare = breakdown.sundayFare;
 
     return result;
 }
@@ -161,7 +168,14 @@ std::string RoutePlanner::formatRoute(const RouteResult& route, bool useColors) 
        << "  " << cBold(YELLOW) << "Est. Time:   " << cReset() << "~" << route.estimatedTimeMinutes << " mins\n";
 
     if (route.fare.has_value()) {
-        ss << "  " << cBold(YELLOW) << "Fare:        " << cReset() << "Rs " << *route.fare << "\n";
+        ss << "  " << cBold(YELLOW) << "Fare (2026): " << cReset() << "Rs " << *route.fare;
+        if (route.smartCardFare.has_value() && *route.smartCardFare > 0) {
+            ss << " (Smart Card: Rs " << *route.smartCardFare << ")";
+        }
+        if (route.sundayFare.has_value() && *route.sundayFare > 0 && *route.sundayFare != *route.fare) {
+            ss << " [Sun/Holiday: Rs " << *route.sundayFare << "]";
+        }
+        ss << "\n";
     }
 
     ss << "\n" << cBold(BOLD) << "--- Journey Itinerary ---" << cReset() << "\n";
@@ -186,6 +200,10 @@ std::string RoutePlanner::formatRoute(const RouteResult& route, bool useColors) 
         else if (currentLineId == "green") lineColor = GREEN;
         else if (currentLineId == "violet") lineColor = MAGENTA;
         else if (currentLineId == "yellow") lineColor = YELLOW;
+        else if (currentLineId == "orange") lineColor = YELLOW;
+        else if (currentLineId == "magenta") lineColor = MAGENTA;
+        else if (currentLineId == "pink") lineColor = MAGENTA;
+        else if (currentLineId == "grey") lineColor = DIM;
 
         size_t j = stepIdx;
         while (j < route.steps.size() && route.steps[j].lineId == currentLineId) {
@@ -260,6 +278,16 @@ std::string RoutePlanner::toJson(const RouteResult& route) const {
         ss << "  \"fareInr\": " << *route.fare << ",\n";
     } else {
         ss << "  \"fareInr\": null,\n";
+    }
+    if (route.smartCardFare.has_value()) {
+        ss << "  \"smartCardFareInr\": " << *route.smartCardFare << ",\n";
+    } else {
+        ss << "  \"smartCardFareInr\": null,\n";
+    }
+    if (route.sundayFare.has_value()) {
+        ss << "  \"sundayFareInr\": " << *route.sundayFare << ",\n";
+    } else {
+        ss << "  \"sundayFareInr\": null,\n";
     }
 
     // Interchanges

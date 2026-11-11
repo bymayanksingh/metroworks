@@ -68,6 +68,8 @@ struct RouteResult {
     int totalStops{0};
     int estimatedTimeMinutes{0};
     std::optional<CurrencyInr> fare;
+    std::optional<CurrencyInr> smartCardFare;
+    std::optional<CurrencyInr> sundayFare;
     std::string errorMessage;
 };
 

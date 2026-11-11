@@ -1,8 +1,43 @@
 #include "metroworks/fare_calculator.hpp"
 #include <algorithm>
 #include <limits>
+#include <cmath>
 
 namespace metroworks {
+
+FareBreakdown FareCalculator::calculateFromDistance(DistanceKm distanceKm) {
+    if (distanceKm <= 0.0) {
+        return {0, 0, 0};
+    }
+
+    int standard = 64;
+    int sunday = 54;
+
+    if (distanceKm <= 2.0) {
+        standard = 11;
+        sunday = 11;
+    } else if (distanceKm <= 5.0) {
+        standard = 21;
+        sunday = 11;
+    } else if (distanceKm <= 12.0) {
+        standard = 32;
+        sunday = 21;
+    } else if (distanceKm <= 21.0) {
+        standard = 43;
+        sunday = 32;
+    } else if (distanceKm <= 32.0) {
+        standard = 54;
+        sunday = 43;
+    } else {
+        standard = 64;
+        sunday = 54;
+    }
+
+    // Smart Card receives flat 10% discount rounded to nearest rupee
+    int smartCard = static_cast<int>(std::round(standard * 0.90));
+
+    return {standard, smartCard, sunday};
+}
 
 void FareCalculator::setMatrix(std::vector<std::vector<int>> matrix) {
     fareMatrix_ = std::move(matrix);

@@ -1,94 +1,245 @@
-Rithala,Netaji Subhash Place,5.2
-Netaji Subhash Place,Keshav Puram,1.2
-Keshav Puram,Kanhaiya Nagar,0.8
-Kanhaiya Nagar,Inderlok,1.2
-Inderlok,Shastri Nagar,1.2
-Shastri Nagar,Pratap Nagar,1.7
-Pratap Nagar,Pulbangash,0.8
-Pulbangash,Tis Hazari,0.9
-Tis Hazari,Kashmere Gate,1.1
-Kashmere Gate,Shastri Park,2.2
-Shastri Park,Seelampur,1.6
-Seelampur,Welcome,1.1
-Rajouri Garden,Ramesh Nagar,1
-Ramesh Nagar,Moti Nagar,1.2
-Moti Nagar,Kirti Nagar,1
-Kirti Nagar,Shadipur,0.7
-Shadipur,Patel Nagar,1.3
-Patel Nagar,Rajender Place,0.9
-Rajender Place,Karol Bagh,1
-Karol Bagh,Rajiv Chowk,3.4
-Rajiv Chowk,Barakhamba Road,0.7
-Barakhamba Road,Mandi House,1
-Mandi House,Pragati Maiden,0.8
-Pragati Maiden,Inderprastha,0.8
-Inderprastha,Yamuna Bank,1.8
-Yamuna Bank,Laxmi Nagar,1.3
-Laxmi Nagar,Nirman Vihar,1.1
-Nirman Vihar,Preet Vihar,1.0
-Preet Vihar,Karkar Duma,1.2
-Karkar Duma,Anand Vihar,1.1
-Anand Vihar,Kaushambi,0.8
-Kaushambi,Vaishali,1.6
-Yamuna Bank,Akshardham,1.3
-Akshardham,Mayur Vihar Phase-1,1.8
-Mayur Vihar Phase-1,Mayur Vihar Extention,1.2
-Mayur Vihar Extention,New Ashok Nagar,0.9
-New Ashok Nagar,Noida Sector-15,1.0
-Noida Sector-15,Noida Sector-16,1.1
-Noida Sector-16,Noida Sector-18,1.1
-Noida Sector-18,Botanical Garden,1.1
-Botanical Garden,Golf Course,1.2
-Golf Course,Noida City Center,1.3
-Madipur,Shivaji Park,1.1
-Shivaji Park,Punjabi Bagh,1.6
-Punjabi Bagh,Ashok Park,0.9
-Ashok Park,Inderlok,1.4
-Ashok Park,Sant Guru Ram Singh Marg,1.1
-Sant Guru Ram Singh Marg,Kirti Nagar,1
-Kashmere Gate,Lal Qila,1.5
-Lal Qila,Jama Masjid,0.8
-Jama Masjid,Delhi Gate,1.4
-Delhi Gate,ITO,1.3
-ITO,Mandi House,0.8
-Mandi House,Janptah,1.4
-Janptah,Central Secretariat,1.3
-Central Secretariat,Khan Market,2.1
-Khan Market,JL Nehru Stadium,1.4
-JL Nehru Stadium,Jangpura,0.9
-Vishwavidyalaya,Vidhan Sabha,1
-Vidhan Sabha,Civil Lines,1.3
-Civil Lines,Kashmere Gate,1.1
-Kashmere Gate,Chandni Chowk,1.1
-Chandni Chowk,Chawri Bazar,1
-Chawri Bazar,New Delhi,0.8
-New Delhi,Rajiv Chowk,1.1
-Rajiv Chowk,Patel Chowk,1.3
-Patel Chowk,Central Secretariat,0.9
-Central Secretariat,Udyog Bhawan,0.3
-Udyog Bhawan,Lok Kalyan Marg,1.6
-Lok Kalyan Marg,Jor Bagh,1.2
-Samaypur Badli,Rohini Sector - 18,0.8
-Rohini Sector - 18,Haiderpur Badli Mor,1.3
-Haiderpur Badli Mor,Jahangirpuri,1.3
-Jahangirpuri,Adarsh Nagar,1.3
-Adarsh Nagar,Azadpur,1.5
-Azadpur,Model Town,1.4
-Model Town,GTB Nagar,1.4
-GTB Nagar,Vishwavidyalaya,0.8
-Jor Bagh,INA,1.3
-INA,AIIMS,0.8
-AIIMS,Green Park,1.0
-Green Park,Hauz Khas,1.8
-Hauz Khas,Malviya Nagar,1.7
-Malviya Nagar,Saket,0.9
-Saket,Qutab Minar,1.7
-Qutab Minar,Chhattarpur,1.3
-Chhattarpur,Sultanpur,1.6
-Sultanpur,Ghitorni,1.3
-Ghitorni,Arjan Garh,2.7
-Arjan Garh,Guru Dronacharya,2.3
-Guru Dronacharya,Sikandarpur,1.0
-Sikandarpur,MG Road,1.2
-MG Road,IFFCO Chowk,1.1
-IFFCO Chowk,Huda City Centre,1.5
+Shaheed Sthal,Hindon River,1.0,red
+Hindon River,Arthala,1.5,red
+Arthala,Mohan Nagar,0.8,red
+Mohan Nagar,Shyam Park,1.4,red
+Shyam Park,Major Mohit Sharma Rajendra Nagar,1.2,red
+Major Mohit Sharma Rajendra Nagar,Raj Bagh,1.4,red
+Raj Bagh,Shahid Nagar,1.3,red
+Shahid Nagar,Dilshad Garden,1.2,red
+Dilshad Garden,Jhilmil,0.9,red
+Jhilmil,Mansarovar Park,1.1,red
+Mansarovar Park,Shahdara,1.1,red
+Shahdara,Welcome,1.2,red
+Welcome,Seelampur,1.1,red
+Seelampur,Shastri Park,1.6,red
+Shastri Park,Kashmere Gate,2.2,red
+Kashmere Gate,Tis Hazari,1.1,red
+Tis Hazari,Pulbangash,0.9,red
+Pulbangash,Pratap Nagar,0.8,red
+Pratap Nagar,Shastri Nagar,1.7,red
+Shastri Nagar,Inderlok,1.2,red
+Inderlok,Kanhaiya Nagar,1.2,red
+Kanhaiya Nagar,Keshav Puram,0.8,red
+Keshav Puram,Netaji Subhash Place,1.2,red
+Netaji Subhash Place,Kohat Enclave,1.2,red
+Kohat Enclave,Pitampura,1.0,red
+Pitampura,Rohini East,0.8,red
+Rohini East,Rohini West,1.3,red
+Rohini West,Rithala,1.0,red
+Samaypur Badli,Rohini Sector 18-19,0.8,yellow
+Rohini Sector 18-19,Haiderpur Badli Mor,1.3,yellow
+Haiderpur Badli Mor,Jahangirpuri,1.3,yellow
+Jahangirpuri,Adarsh Nagar,1.3,yellow
+Adarsh Nagar,Azadpur,1.5,yellow
+Azadpur,Model Town,1.4,yellow
+Model Town,GTB Nagar,1.4,yellow
+GTB Nagar,Vishwavidyalaya,0.8,yellow
+Vishwavidyalaya,Vidhan Sabha,1.0,yellow
+Vidhan Sabha,Civil Lines,1.3,yellow
+Civil Lines,Kashmere Gate,1.1,yellow
+Kashmere Gate,Chandni Chowk,1.1,yellow
+Chandni Chowk,Chawri Bazar,1.0,yellow
+Chawri Bazar,New Delhi,0.8,yellow
+New Delhi,Rajiv Chowk,1.1,yellow
+Rajiv Chowk,Patel Chowk,1.3,yellow
+Patel Chowk,Central Secretariat,0.9,yellow
+Central Secretariat,Udyog Bhawan,0.3,yellow
+Udyog Bhawan,Lok Kalyan Marg,1.6,yellow
+Lok Kalyan Marg,Jor Bagh,1.2,yellow
+Jor Bagh,Dilli Haat - INA,1.3,yellow
+Dilli Haat - INA,AIIMS,0.8,yellow
+AIIMS,Green Park,1.0,yellow
+Green Park,Hauz Khas,1.8,yellow
+Hauz Khas,Malviya Nagar,1.7,yellow
+Malviya Nagar,Saket,0.9,yellow
+Saket,Qutab Minar,1.7,yellow
+Qutab Minar,Chhattarpur,1.3,yellow
+Chhattarpur,Sultanpur,1.6,yellow
+Sultanpur,Ghitorni,1.3,yellow
+Ghitorni,Arjan Garh,2.7,yellow
+Arjan Garh,Guru Dronacharya,2.3,yellow
+Guru Dronacharya,Sikanderpur,1.0,yellow
+Sikanderpur,MG Road,1.2,yellow
+MG Road,IFFCO Chowk,1.1,yellow
+IFFCO Chowk,Millennium City Centre Gurugram,1.5,yellow
+Dwarka Sector 21,Dwarka Sector 8,1.0,blue
+Dwarka Sector 8,Dwarka Sector 9,1.2,blue
+Dwarka Sector 9,Dwarka Sector 10,1.1,blue
+Dwarka Sector 10,Dwarka Sector 11,1.0,blue
+Dwarka Sector 11,Dwarka Sector 12,1.0,blue
+Dwarka Sector 12,Dwarka Sector 13,0.9,blue
+Dwarka Sector 13,Dwarka Sector 14,0.9,blue
+Dwarka Sector 14,Dwarka,1.5,blue
+Dwarka,Dwarka Mor,1.1,blue
+Dwarka Mor,Nawada,1.2,blue
+Nawada,Uttam Nagar West,1.0,blue
+Uttam Nagar West,Uttam Nagar East,1.0,blue
+Uttam Nagar East,Janakpuri West,1.3,blue
+Janakpuri West,Janakpuri East,1.0,blue
+Janakpuri East,Tilak Nagar,1.0,blue
+Tilak Nagar,Subhash Nagar,1.0,blue
+Subhash Nagar,Tagore Garden,0.9,blue
+Tagore Garden,Rajouri Garden,1.1,blue
+Rajouri Garden,Ramesh Nagar,1.0,blue
+Ramesh Nagar,Moti Nagar,1.2,blue
+Moti Nagar,Kirti Nagar,1.0,blue
+Kirti Nagar,Shadipur,0.7,blue
+Shadipur,Patel Nagar,1.3,blue
+Patel Nagar,Rajendra Place,0.9,blue
+Rajendra Place,Karol Bagh,1.0,blue
+Karol Bagh,Jhandewalan,1.2,blue
+Jhandewalan,RK Ashram Marg,1.0,blue
+RK Ashram Marg,Rajiv Chowk,1.2,blue
+Rajiv Chowk,Barakhamba Road,0.7,blue
+Barakhamba Road,Mandi House,1.0,blue
+Mandi House,Supreme Court,0.8,blue
+Supreme Court,Indraprastha,0.8,blue
+Indraprastha,Yamuna Bank,1.8,blue
+Yamuna Bank,Akshardham,1.3,blue
+Akshardham,Mayur Vihar-I,1.8,blue
+Mayur Vihar-I,Mayur Vihar Extension,1.2,blue
+Mayur Vihar Extension,New Ashok Nagar,0.9,blue
+New Ashok Nagar,Noida Sector 15,1.0,blue
+Noida Sector 15,Noida Sector 16,1.1,blue
+Noida Sector 16,Noida Sector 18,1.1,blue
+Noida Sector 18,Botanical Garden,1.1,blue
+Botanical Garden,Golf Course,1.2,blue
+Golf Course,Noida City Centre,1.3,blue
+Noida City Centre,Noida Sector 34,0.8,blue
+Noida Sector 34,Noida Sector 52,1.3,blue
+Noida Sector 52,Noida Sector 61,1.1,blue
+Noida Sector 61,Noida Sector 59,1.0,blue
+Noida Sector 59,Noida Sector 62,1.2,blue
+Noida Sector 62,Noida Electronic City,1.2,blue
+Yamuna Bank,Laxmi Nagar,1.3,blue
+Laxmi Nagar,Nirman Vihar,1.1,blue
+Nirman Vihar,Preet Vihar,1.0,blue
+Preet Vihar,Karkarduma,1.2,blue
+Karkarduma,Anand Vihar ISBT,1.1,blue
+Anand Vihar ISBT,Kaushambi,0.8,blue
+Kaushambi,Vaishali,1.6,blue
+Brigadier Hoshiar Singh,Bahadurgarh City,1.7,green
+Bahadurgarh City,Pandit Shree Ram Sharma,1.4,green
+Pandit Shree Ram Sharma,Tikri Border,1.3,green
+Tikri Border,Tikri Kalan,1.3,green
+Tikri Kalan,Ghevra,1.5,green
+Ghevra,Mundka Industrial Area,1.3,green
+Mundka Industrial Area,Mundka,1.4,green
+Mundka,Rajdhani Park,1.2,green
+Rajdhani Park,Nangloi Railway Station,0.9,green
+Nangloi Railway Station,Nangloi,0.8,green
+Nangloi,Surajmal Stadium,0.8,green
+Surajmal Stadium,Udyog Nagar,1.2,green
+Udyog Nagar,Peera Garhi,0.9,green
+Peera Garhi,Paschim Vihar West,1.0,green
+Paschim Vihar West,Paschim Vihar East,1.0,green
+Paschim Vihar East,Madipur,1.1,green
+Madipur,Shivaji Park,1.1,green
+Shivaji Park,Punjabi Bagh,1.6,green
+Punjabi Bagh,Ashok Park Main,0.9,green
+Ashok Park Main,Inderlok,1.4,green
+Ashok Park Main,Satguru Ram Singh Marg,1.1,green
+Satguru Ram Singh Marg,Kirti Nagar,1.0,green
+Kashmere Gate,Lal Quila,1.5,violet
+Lal Quila,Jama Masjid,0.8,violet
+Jama Masjid,Delhi Gate,1.4,violet
+Delhi Gate,ITO,1.3,violet
+ITO,Mandi House,0.8,violet
+Mandi House,Janpath,1.4,violet
+Janpath,Central Secretariat,1.3,violet
+Central Secretariat,Khan Market,2.1,violet
+Khan Market,Jawaharlal Nehru Stadium,1.4,violet
+Jawaharlal Nehru Stadium,Jangpura,0.9,violet
+Jangpura,Lajpat Nagar,1.5,violet
+Lajpat Nagar,Moolchand,0.9,violet
+Moolchand,Kailash Colony,1.3,violet
+Kailash Colony,Nehru Place,1.0,violet
+Nehru Place,Kalkaji Mandir,0.8,violet
+Kalkaji Mandir,Govind Puri,1.1,violet
+Govind Puri,Harkesh Nagar Okhla,1.1,violet
+Harkesh Nagar Okhla,Jasola Apollo,0.9,violet
+Jasola Apollo,Sarita Vihar,1.2,violet
+Sarita Vihar,Mohan Estate,1.2,violet
+Mohan Estate,Tughlakabad Station,1.9,violet
+Tughlakabad Station,Badarpur Border,1.1,violet
+Badarpur Border,Sarai,2.5,violet
+Sarai,NHPC Chowk,1.6,violet
+NHPC Chowk,Mewala Maharajpur,0.9,violet
+Mewala Maharajpur,Sector 28,1.2,violet
+Sector 28,Badkal Mor,1.7,violet
+Badkal Mor,Old Faridabad,1.2,violet
+Old Faridabad,Neelam Chowk Ajronda,1.6,violet
+Neelam Chowk Ajronda,Bata Chowk,1.3,violet
+Bata Chowk,Escorts Mujesar,1.8,violet
+Escorts Mujesar,Sant Surdas (Sihi),1.7,violet
+Sant Surdas (Sihi),Raja Nahar Singh,1.7,violet
+New Delhi,Shivaji Stadium,1.9,orange
+Shivaji Stadium,Dhaula Kuan,6.4,orange
+Dhaula Kuan,Delhi Aerocity,6.2,orange
+Delhi Aerocity,Airport (T3),3.6,orange
+Airport (T3),Dwarka Sector 21,2.9,orange
+Dwarka Sector 21,Yashobhoomi Dwarka Sector 25,2.0,orange
+Janakpuri West,Dabri Mor - Janakpuri South,2.0,magenta
+Dabri Mor - Janakpuri South,Dashrath Puri,1.1,magenta
+Dashrath Puri,Palam,1.5,magenta
+Palam,Sadar Bazar Cantonment,2.6,magenta
+Sadar Bazar Cantonment,Terminal 1 IGI Airport,1.7,magenta
+Terminal 1 IGI Airport,Shankar Vihar,1.8,magenta
+Shankar Vihar,Vasant Vihar,2.1,magenta
+Vasant Vihar,Munirka,1.2,magenta
+Munirka,R.K. Puram,1.4,magenta
+R.K. Puram,IIT,1.0,magenta
+IIT,Hauz Khas,1.2,magenta
+Hauz Khas,Panchsheel Park,1.5,magenta
+Panchsheel Park,Chirag Delhi,0.9,magenta
+Chirag Delhi,Greater Kailash,0.9,magenta
+Greater Kailash,Nehru Enclave,1.3,magenta
+Nehru Enclave,Kalkaji Mandir,0.9,magenta
+Kalkaji Mandir,Okhla NSIC,1.1,magenta
+Okhla NSIC,Sukhdev Vihar,1.1,magenta
+Sukhdev Vihar,Jamia Millia Islamia,1.2,magenta
+Jamia Millia Islamia,Okhla Vihar,0.8,magenta
+Okhla Vihar,Jasola Vihar Shaheen Bagh,1.8,magenta
+Jasola Vihar Shaheen Bagh,Kalindi Kunj,1.4,magenta
+Kalindi Kunj,Okhla Bird Sanctuary,1.6,magenta
+Okhla Bird Sanctuary,Botanical Garden,1.7,magenta
+Majlis Park,Azadpur,2.1,pink
+Azadpur,Shalimar Bagh,1.6,pink
+Shalimar Bagh,Netaji Subhash Place,1.4,pink
+Netaji Subhash Place,Shakurpur,1.2,pink
+Shakurpur,Punjabi Bagh West,1.4,pink
+Punjabi Bagh West,ESI - Basaidarapur,2.5,pink
+ESI - Basaidarapur,Rajouri Garden,1.1,pink
+Rajouri Garden,Maya Puri,1.5,pink
+Maya Puri,Naraina Vihar,1.5,pink
+Naraina Vihar,Delhi Cantt,1.8,pink
+Delhi Cantt,Durgabai Deshmukh South Campus,3.6,pink
+Durgabai Deshmukh South Campus,Sir M. Vishweshwaraiah Moti Bagh,1.3,pink
+Sir M. Vishweshwaraiah Moti Bagh,Bhikaji Cama Place,1.6,pink
+Bhikaji Cama Place,Sarojini Nagar,1.2,pink
+Sarojini Nagar,Dilli Haat - INA,1.1,pink
+Dilli Haat - INA,South Extension,1.2,pink
+South Extension,Lajpat Nagar,1.6,pink
+Lajpat Nagar,Vinobapuri,1.4,pink
+Vinobapuri,Ashram,1.2,pink
+Ashram,Sarai Kale Khan - Nizamuddin,1.7,pink
+Sarai Kale Khan - Nizamuddin,Mayur Vihar-I,3.6,pink
+Mayur Vihar-I,Mayur Vihar Pocket-1,0.8,pink
+Mayur Vihar Pocket-1,Trilokpuri - Sanjay Lake,1.3,pink
+Trilokpuri - Sanjay Lake,East Vinod Nagar - Mayur Vihar-II,0.8,pink
+East Vinod Nagar - Mayur Vihar-II,Mandawali - West Vinod Nagar,0.6,pink
+Mandawali - West Vinod Nagar,IP Extension,1.3,pink
+IP Extension,Anand Vihar ISBT,1.6,pink
+Anand Vihar ISBT,Karkarduma,1.0,pink
+Karkarduma,Karkarduma Court,1.1,pink
+Karkarduma Court,Krishna Nagar,0.7,pink
+Krishna Nagar,East Azad Nagar,1.0,pink
+East Azad Nagar,Welcome,1.1,pink
+Welcome,Jafrabad,1.2,pink
+Jafrabad,Maujpur - Babarpur,1.1,pink
+Maujpur - Babarpur,Gokulpuri,1.3,pink
+Gokulpuri,Johri Enclave,1.3,pink
+Johri Enclave,Shiv Vihar,0.9,pink
+Dwarka,Nangli,1.5,grey
+Nangli,Najafgarh,2.7,grey
+Najafgarh,Dhansa Bus Stand,1.2,grey

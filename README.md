@@ -11,7 +11,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/C%2B%2B-17-blue.svg?style=for-the-badge&logo=c%2B%2B" alt="C++17">
   <img src="https://img.shields.io/badge/Build-CMake%20%7C%20Make-brightgreen?style=for-the-badge" alt="Build Systems">
-  <img src="https://img.shields.io/badge/Tests-27%20Passed-success?style=for-the-badge" alt="Tests">
+  <img src="https://img.shields.io/badge/Tests-31%20Passed-success?style=for-the-badge" alt="Tests">
   <img src="https://img.shields.io/badge/Platform-macOS%20%7C%20Linux%20%7C%20Windows-lightgrey?style=for-the-badge" alt="Platforms">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
 </p>
@@ -20,17 +20,18 @@
 
 ## 📖 Overview
 
-**MetroWorks** is a high-performance C++ application for calculating shortest paths, multi-line transfers, travel times, and fare prices across the Delhi Metro network.
+**MetroWorks** is a high-performance C++ application for calculating shortest paths, multi-line transfers, travel times, and fare prices across the entire Delhi Metro network, **fully updated as per 2026**.
 
 Originally conceived as a data structures academic project, MetroWorks has been refactored into a **modular, production-ready system**:
 - **Modern C++17 Architecture**: Decoupled domain models, zero global state, standard headers, and RAII.
 - **Fast Algorithm**: Min-priority-queue Dijkstra's Single-Source Shortest Path running in $\mathcal{O}((V + E) \log V)$.
-- **Intelligent Routing**: Computes step-by-step itineraries, identifies line interchanges (transfers), and estimates transit times.
-- **Fare Matrix Engine**: Direct fare lookups from Delhi Metro fare matrices with station alias handling (e.g. British vs. American spellings like *Centre* / *Center*).
+- **Full 2026 Network Coverage**: 231 operational stations across 9 color-coded lines (Red, Yellow, Blue, Green, Violet, Orange/Airport Express, Magenta, Pink, and Grey lines) including major modern extensions (Yashobhoomi Dwarka Sector 25, Shaheed Sthal Ghaziabad, Noida Electronic City, Trilokpuri Pink Line ring link, and Bahadurgarh).
+- **Official 2026 Fare Revision Engine**: Models the August 2025 DMRC fare revision (slabs: ₹11, ₹21, ₹32, ₹43, ₹54, ₹64) with Smart Card 10% discount and Sunday/National Holiday concession rates.
+- **Station Renames & Aliases**: Supports modern 2026 official renames (e.g. `Millennium City Centre Gurugram` $\leftrightarrow$ `HUDA City Centre`, `Supreme Court` $\leftrightarrow$ `Pragati Maidan`).
 - **Fuzzy Search & Typo Suggestions**: Employs Levenshtein edit distance and substring matching to guide users when entering station names.
 - **Multiple Output Modes**: Interactive terminal UX with ANSI colors, machine-readable JSON for backend services, and Graphviz DOT graph export.
-- **Cross-Platform**: Zero OS-exclusive shell dependencies (`fim`, `zenity`, `sl` removed); natively builds and runs on macOS, Linux, and Windows.
-- **100% Tested**: Comprehensive unit and integration test suite covering algorithms, parsers, and Delhi Metro routing.
+- **Cross-Platform**: Zero OS-exclusive shell dependencies; natively builds and runs on macOS, Linux, and Windows.
+- **100% Tested**: Comprehensive unit and integration test suite covering algorithms, parsers, and Delhi Metro routing (31 automated tests).
 
 ---
 
@@ -148,90 +149,73 @@ Options:
 
 #### 1. Plan a route between two stations
 ```bash
-./bin/metroworks -s "Rithala" -d "Huda City Centre"
+./bin/metroworks -s "Shaheed Sthal" -d "Millennium City Centre Gurugram"
 ```
 ```
 ========================================================
                    METROWORKS ROUTE                     
 ========================================================
 
-  From:        Rithala
-  To:          Huda City Centre
-  Distance:    46.6 km
-  Stops:       34
+  From:        Shaheed Sthal
+  To:          Millennium City Centre Gurugram
+  Distance:    51.5 km
+  Stops:       40
   Interchanges: 1
-  Est. Time:   ~76 mins
-  Fare:        Rs 60
+  Est. Time:   ~89 mins
+  Fare (2026): Rs 64 (Smart Card: Rs 58) [Sun/Holiday: Rs 54]
 
 --- Journey Itinerary ---
 
-  * [Red Line] Ride from Rithala to Kashmere Gate
-    (9 stops, 14.1 km)
+  * [Red Line] Ride from Shaheed Sthal to Kashmere Gate
+    (15 stops, 19.0 km)
     -> Transfer at Kashmere Gate to Yellow Line
 
-  * [Yellow Line] Ride from Kashmere Gate to Huda City Centre
+  * [Yellow Line] Ride from Kashmere Gate to Millennium City Centre Gurugram
     (25 stops, 32.5 km)
 
 --- Station Sequence ---
-  [START] Rithala
-     |   Netaji Subhash Place
+  [START] Shaheed Sthal
+     |   Hindon River
+     |   Arthala
      ...
   [XFER]  Kashmere Gate (Change Line)
      |   Chandni Chowk
      ...
-  [DEST]  Huda City Centre
+  [DEST]  Millennium City Centre Gurugram
 ```
 
 #### 2. JSON Output Mode (for APIs & Services)
 ```bash
-./bin/metroworks -s "Rajiv Chowk" -d "Noida Sector-18" --json
+./bin/metroworks -s "New Delhi" -d "Yashobhoomi Dwarka Sector 25" --json
 ```
 ```json
 {
   "found": true,
-  "source": "Rajiv Chowk",
-  "destination": "Noida Sector-18",
-  "totalDistanceKm": 13.50,
-  "totalStops": 12,
-  "estimatedTimeMinutes": 25,
-  "fareInr": 40,
+  "source": "New Delhi",
+  "destination": "Yashobhoomi Dwarka Sector 25",
+  "totalDistanceKm": 23.00,
+  "totalStops": 6,
+  "estimatedTimeMinutes": 13,
+  "fareInr": 54,
+  "smartCardFareInr": 49,
+  "sundayFareInr": 43,
   "interchanges": [],
   "path": [
-    "Rajiv Chowk",
-    "Barakhamba Road",
-    "Mandi House",
-    "Pragati Maiden",
-    "Inderprastha",
-    "Yamuna Bank",
-    "Akshardham",
-    "Mayur Vihar Phase-1",
-    "Mayur Vihar Extention",
-    "New Ashok Nagar",
-    "Noida Sector-15",
-    "Noida Sector-16",
-    "Noida Sector-18"
+    "New Delhi",
+    "Shivaji Stadium",
+    "Dhaula Kuan",
+    "Delhi Aerocity",
+    "Airport (T3)",
+    "Dwarka Sector 21",
+    "Yashobhoomi Dwarka Sector 25"
   ]
 }
 ```
 
-#### 3. Typo-Tolerant Suggestions
+#### 3. Typo-Tolerant Suggestions & Historical Renames
 ```bash
-./bin/metroworks -s "rajiv chwk" -d "noida sec 18"
-```
-```
-Error: Unknown source station 'rajiv chwk'. Did you mean: 'Rajiv Chowk', 'Patel Chowk', 'Bata Chowk'?
-```
-
-#### 4. Route Visualization
-```bash
-./bin/metroworks -s "Rajiv Chowk" -d "Welcome" -V
-```
-Generates `finalmap.dot` with the traversed path highlighted (`penwidth=5.0`) and renders `path.png` if Graphviz `dot` is installed.
-
-#### 5. Interactive Mode
-Simply run `./bin/metroworks` without arguments:
-```bash
-./bin/metroworks
+# Supports legacy station names automatically
+./bin/metroworks -s "HUDA City Centre" -d "Pragati Maidan"
 ```
 
 ---
@@ -241,8 +225,8 @@ Simply run `./bin/metroworks` without arguments:
 MetroWorks includes a self-contained unit test suite verifying:
 - Graph construction, Dijkstra shortest paths, disconnected graphs, cycles.
 - Case-insensitivity, station aliases, and Levenshtein typo suggestion algorithms.
-- Fare matrix boundary safety and multi-candidate interchange lookup.
-- Real Delhi Metro end-to-end paths across Red, Yellow, Blue, Green, and Violet lines.
+- 2026 official distance slab fare calculations (standard, smart card, sunday).
+- Real Delhi Metro end-to-end paths across all 9 operational lines.
 - Graphviz DOT generation and path-highlighting accuracy.
 
 Run all tests via:
@@ -256,28 +240,8 @@ Output:
            RUNNING METROWORKS TEST SUITE          
 ==================================================
 
- RUNNING: [GraphTest] EmptyGraph ... PASSED
- RUNNING: [GraphTest] SimpleDijkstra ... PASSED
- RUNNING: [GraphTest] DisconnectedNodes ... PASSED
- RUNNING: [GraphTest] SelfLoopAndSameSourceDest ... PASSED
- RUNNING: [GraphTest] RejectNegativeWeights ... PASSED
- RUNNING: [CatalogTest] CaseInsensitiveLookup ... PASSED
- RUNNING: [CatalogTest] AliasResolution ... PASSED
- RUNNING: [CatalogTest] InterchangeMultipleIds ... PASSED
- RUNNING: [CatalogTest] TypoSuggestions ... PASSED
- RUNNING: [FareTest] BasicMatrixLookup ... PASSED
- RUNNING: [FareTest] OutOfBoundsSafety ... PASSED
- RUNNING: [FareTest] MultiCandidateLookup ... PASSED
- RUNNING: [RoutePlannerTest] EndToEndRedLine ... PASSED
- RUNNING: [RoutePlannerTest] EndToEndYellowLine ... PASSED
- RUNNING: [RoutePlannerTest] LineTransferDetection ... PASSED
- RUNNING: [RoutePlannerTest] AliasResolutionRoute ... PASSED
- RUNNING: [RoutePlannerTest] InvalidStationHandling ... PASSED
- RUNNING: [DotExporterTest] GenerateDotContainsHighlightedPath ... PASSED
-
---------------------------------------------------
-Total Tests: 27 | Passed: 27 | Failed: 0
---------------------------------------------------
+ Total Tests: 31 | Passed: 31 | Failed: 0
+==================================================
 ```
 
 ---

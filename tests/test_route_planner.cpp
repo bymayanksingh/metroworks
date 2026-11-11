@@ -19,10 +19,12 @@ TEST_CASE(RoutePlannerTest, EndToEndRedLine) {
     ASSERT_EQ(route.destination, "Welcome");
     ASSERT_EQ(route.path.front(), "Rithala");
     ASSERT_EQ(route.path.back(), "Welcome");
-    ASSERT_EQ(route.totalStops, 12);
-    ASSERT_NEAR(route.totalDistanceKm, 19.0, 0.1);
+    ASSERT_EQ(route.totalStops, 16);
+    ASSERT_NEAR(route.totalDistanceKm, 19.1, 0.2);
     ASSERT_TRUE(route.fare.has_value());
-    ASSERT_EQ(*route.fare, 40);
+    ASSERT_EQ(*route.fare, 43);
+    ASSERT_EQ(*route.smartCardFare, 39);
+    ASSERT_EQ(*route.sundayFare, 32);
 }
 
 TEST_CASE(RoutePlannerTest, EndToEndYellowLine) {
@@ -39,7 +41,9 @@ TEST_CASE(RoutePlannerTest, EndToEndYellowLine) {
     ASSERT_EQ(route.totalStops, 7);
     ASSERT_NEAR(route.totalDistanceKm, 7.4, 0.1);
     ASSERT_TRUE(route.fare.has_value());
-    ASSERT_EQ(*route.fare, 30);
+    ASSERT_EQ(*route.fare, 32);
+    ASSERT_EQ(*route.smartCardFare, 29);
+    ASSERT_EQ(*route.sundayFare, 21);
 }
 
 TEST_CASE(RoutePlannerTest, LineTransferDetection) {
@@ -48,16 +52,15 @@ TEST_CASE(RoutePlannerTest, LineTransferDetection) {
     DataLoader::loadAll("data", network, fareCalc);
 
     RoutePlanner planner(network, fareCalc);
-    // Rithala is on Red Line; Huda City Centre is on Yellow Line.
-    // They intersect at Kashmere Gate.
-    auto route = planner.findShortestRoute("Rithala", "Huda City Centre");
+    // Rithala is on Red Line; Millennium City Centre Gurugram (formerly Huda City Centre) is on Yellow Line.
+    auto route = planner.findShortestRoute("Rithala", "Millennium City Centre Gurugram");
 
     ASSERT_TRUE(route.found);
     ASSERT_FALSE(route.interchanges.empty());
 
     bool foundTransferAtKashmereGate = false;
     for (const auto& ic : route.interchanges) {
-        if (ic.station == "Kashmere Gate" || ic.station == "Inderlok") {
+        if (ic.station == "Kashmere Gate" || ic.station == "Inderlok" || ic.station == "Netaji Subhash Place") {
             foundTransferAtKashmereGate = true;
             break;
         }
@@ -77,7 +80,53 @@ TEST_CASE(RoutePlannerTest, AliasResolutionRoute) {
     ASSERT_TRUE(route.found);
     ASSERT_EQ(route.destination, "Noida City Centre");
     ASSERT_TRUE(route.fare.has_value());
-    ASSERT_EQ(*route.fare, 40);
+    ASSERT_EQ(*route.fare, 43);
+    ASSERT_EQ(*route.smartCardFare, 39);
+}
+
+TEST_CASE(RoutePlannerTest, RenamedStationsResolution) {
+    MetroNetwork network;
+    FareCalculator fareCalc;
+    DataLoader::loadAll("data", network, fareCalc);
+
+    RoutePlanner planner(network, fareCalc);
+    // User types legacy "HUDA City Centre" and "Pragati Maidan"
+    auto route = planner.findShortestRoute("HUDA City Centre", "Pragati Maidan");
+
+    ASSERT_TRUE(route.found);
+    ASSERT_EQ(route.source, "Millennium City Centre Gurugram");
+    ASSERT_EQ(route.destination, "Supreme Court");
+    ASSERT_TRUE(*route.fare > 0);
+}
+
+TEST_CASE(RoutePlannerTest, MagentaLineDirect) {
+    MetroNetwork network;
+    FareCalculator fareCalc;
+    DataLoader::loadAll("data", network, fareCalc);
+
+    RoutePlanner planner(network, fareCalc);
+    // Direct Magenta Line journey
+    auto route = planner.findShortestRoute("Janakpuri West", "Botanical Garden");
+
+    ASSERT_TRUE(route.found);
+    ASSERT_EQ(route.path.front(), "Janakpuri West");
+    ASSERT_EQ(route.path.back(), "Botanical Garden");
+    ASSERT_EQ(*route.fare, 54);
+}
+
+TEST_CASE(RoutePlannerTest, AirportExpressDirect) {
+    MetroNetwork network;
+    FareCalculator fareCalc;
+    DataLoader::loadAll("data", network, fareCalc);
+
+    RoutePlanner planner(network, fareCalc);
+    // Airport Express: New Delhi to 2023 extension Yashobhoomi Dwarka Sector 25
+    auto route = planner.findShortestRoute("New Delhi", "Yashobhoomi Dwarka Sector 25");
+
+    ASSERT_TRUE(route.found);
+    ASSERT_EQ(route.totalStops, 6);
+    ASSERT_EQ(route.path.front(), "New Delhi");
+    ASSERT_EQ(route.path.back(), "Yashobhoomi Dwarka Sector 25");
 }
 
 TEST_CASE(RoutePlannerTest, InvalidStationHandling) {
@@ -105,6 +154,8 @@ TEST_CASE(RoutePlannerTest, SameSourceAndDestination) {
     ASSERT_NEAR(route.totalDistanceKm, 0.0, 1e-6);
     ASSERT_TRUE(route.fare.has_value());
     ASSERT_EQ(*route.fare, 0);
+    ASSERT_EQ(*route.smartCardFare, 0);
+    ASSERT_EQ(*route.sundayFare, 0);
     ASSERT_EQ(route.path.size(), 1);
     ASSERT_EQ(route.path[0], "Rajiv Chowk");
 }
@@ -119,20 +170,20 @@ TEST_CASE(RoutePlannerTest, BranchToBranchRouting) {
     auto route = planner.findShortestRoute("Vaishali", "Noida City Centre");
 
     ASSERT_TRUE(route.found);
-    ASSERT_EQ(route.totalStops, 17);
-    ASSERT_NEAR(route.totalDistanceKm, 20.1, 0.1);
+    ASSERT_EQ(route.totalStops, 16);
+    ASSERT_NEAR(route.totalDistanceKm, 17.7, 0.2);
     ASSERT_TRUE(route.fare.has_value());
-    ASSERT_EQ(*route.fare, 40);
+    ASSERT_EQ(*route.fare, 43);
 
-    // Verify Yamuna Bank is traversed
-    bool foundYamunaBank = false;
+    // Verify 2026 routing utilizes the Pink Line link via Anand Vihar ISBT / Mayur Vihar-I
+    bool foundPinkLineCut = false;
     for (const auto& stn : route.path) {
-        if (stn == "Yamuna Bank") {
-            foundYamunaBank = true;
+        if (stn == "Anand Vihar ISBT" || stn == "Trilokpuri - Sanjay Lake" || stn == "Mayur Vihar-I") {
+            foundPinkLineCut = true;
             break;
         }
     }
-    ASSERT_TRUE(foundYamunaBank);
+    ASSERT_TRUE(foundPinkLineCut);
 }
 
 TEST_CASE(RoutePlannerTest, JsonOutputVerification) {
@@ -148,6 +199,8 @@ TEST_CASE(RoutePlannerTest, JsonOutputVerification) {
     ASSERT_TRUE(json.find("\"source\": \"Rajiv Chowk\"") != std::string::npos);
     ASSERT_TRUE(json.find("\"destination\": \"Mandi House\"") != std::string::npos);
     ASSERT_TRUE(json.find("\"fareInr\":") != std::string::npos);
+    ASSERT_TRUE(json.find("\"smartCardFareInr\":") != std::string::npos);
+    ASSERT_TRUE(json.find("\"sundayFareInr\":") != std::string::npos);
     ASSERT_TRUE(json.find("\"path\": [") != std::string::npos);
 }
 
@@ -164,5 +217,6 @@ TEST_CASE(RoutePlannerTest, FormattedTextVerification) {
     ASSERT_TRUE(text.find("Rajiv Chowk") != std::string::npos);
     ASSERT_TRUE(text.find("Mandi House") != std::string::npos);
     ASSERT_TRUE(text.find("Distance:") != std::string::npos);
-    ASSERT_TRUE(text.find("Fare:") != std::string::npos);
+    ASSERT_TRUE(text.find("Fare (2026):") != std::string::npos);
+    ASSERT_TRUE(text.find("Smart Card:") != std::string::npos);
 }

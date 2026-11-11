@@ -101,12 +101,26 @@ void DataLoader::loadStations(const std::filesystem::path& path, MetroNetwork& n
         }
     }
 
-    // Register common spelling variations and historical corrections
+    // Register 2026 official renames and common spelling variations
+    catalog.addAlias("HUDA City Centre", "Millennium City Centre Gurugram");
+    catalog.addAlias("Huda City Centre", "Millennium City Centre Gurugram");
+    catalog.addAlias("Millennium City Centre", "Millennium City Centre Gurugram");
+    catalog.addAlias("Pragati Maidan", "Supreme Court");
+    catalog.addAlias("Pragati Maiden", "Supreme Court");
     catalog.addAlias("Noida City Center", "Noida City Centre");
-    catalog.addAlias("Janpath", "Janptah");
-    catalog.addAlias("Mayur Vihar Extension", "Mayur Vihar Extention");
-    catalog.addAlias("Pragati Maidan", "Pragati Maiden");
+    catalog.addAlias("Janptah", "Janpath");
+    catalog.addAlias("Mayur Vihar Extention", "Mayur Vihar Extension");
     catalog.addAlias("Vishwavidalaya", "Vishwavidyalaya");
+    catalog.addAlias("Anand Vihar", "Anand Vihar ISBT");
+    catalog.addAlias("INA", "Dilli Haat - INA");
+    catalog.addAlias("Dilli Haat INA", "Dilli Haat - INA");
+    catalog.addAlias("Karkardooma", "Karkarduma");
+    catalog.addAlias("Terminal 1 Airport", "Terminal 1 IGI Airport");
+    catalog.addAlias("T1 Airport", "Terminal 1 IGI Airport");
+    catalog.addAlias("Airport", "Airport (T3)");
+    catalog.addAlias("T3 Airport", "Airport (T3)");
+    catalog.addAlias("Dwarka 21", "Dwarka Sector 21");
+    catalog.addAlias("Yashobhoomi", "Yashobhoomi Dwarka Sector 25");
 }
 
 void DataLoader::loadEdges(const std::filesystem::path& path, MetroNetwork& network) {
