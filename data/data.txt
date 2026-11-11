@@ -1,0 +1,94 @@
+Rithala,Netaji Subhash Place,5.2
+Netaji Subhash Place,Keshav Puram,1.2
+Keshav Puram,Kanhaiya Nagar,0.8
+Kanhaiya Nagar,Inderlok,1.2
+Inderlok,Shastri Nagar,1.2
+Shastri Nagar,Pratap Nagar,1.7
+Pratap Nagar,Pulbangash,0.8
+Pulbangash,Tis Hazari,0.9
+Tis Hazari,Kashmere Gate,1.1
+Kashmere Gate,Shastri Park,2.2
+Shastri Park,Seelampur,1.6
+Seelampur,Welcome,1.1
+Rajouri Garden,Ramesh Nagar,1
+Ramesh Nagar,Moti Nagar,1.2
+Moti Nagar,Kirti Nagar,1
+Kirti Nagar,Shadipur,0.7
+Shadipur,Patel Nagar,1.3
+Patel Nagar,Rajender Place,0.9
+Rajender Place,Karol Bagh,1
+Karol Bagh,Rajiv Chowk,3.4
+Rajiv Chowk,Barakhamba Road,0.7
+Barakhamba Road,Mandi House,1
+Mandi House,Pragati Maiden,0.8
+Pragati Maiden,Inderprastha,0.8
+Inderprastha,Yamuna Bank,1.8
+Yamuna Bank,Laxmi Nagar,1.3
+Laxmi Nagar,Nirman Vihar,1.1
+Nirman Vihar,Preet Vihar,1.0
+Preet Vihar,Karkar Duma,1.2
+Karkar Duma,Anand Vihar,1.1
+Anand Vihar,Kaushambi,0.8
+Kaushambi,Vaishali,1.6
+Yamuna Bank,Akshardham,1.3
+Akshardham,Mayur Vihar Phase-1,1.8
+Mayur Vihar Phase-1,Mayur Vihar Extention,1.2
+Mayur Vihar Extention,New Ashok Nagar,0.9
+New Ashok Nagar,Noida Sector-15,1.0
+Noida Sector-15,Noida Sector-16,1.1
+Noida Sector-16,Noida Sector-18,1.1
+Noida Sector-18,Botanical Garden,1.1
+Botanical Garden,Golf Course,1.2
+Golf Course,Noida City Center,1.3
+Madipur,Shivaji Park,1.1
+Shivaji Park,Punjabi Bagh,1.6
+Punjabi Bagh,Ashok Park,0.9
+Ashok Park,Inderlok,1.4
+Ashok Park,Sant Guru Ram Singh Marg,1.1
+Sant Guru Ram Singh Marg,Kirti Nagar,1
+Kashmere Gate,Lal Qila,1.5
+Lal Qila,Jama Masjid,0.8
+Jama Masjid,Delhi Gate,1.4
+Delhi Gate,ITO,1.3
+ITO,Mandi House,0.8
+Mandi House,Janptah,1.4
+Janptah,Central Secretariat,1.3
+Central Secretariat,Khan Market,2.1
+Khan Market,JL Nehru Stadium,1.4
+JL Nehru Stadium,Jangpura,0.9
+Vishwavidyalaya,Vidhan Sabha,1
+Vidhan Sabha,Civil Lines,1.3
+Civil Lines,Kashmere Gate,1.1
+Kashmere Gate,Chandni Chowk,1.1
+Chandni Chowk,Chawri Bazar,1
+Chawri Bazar,New Delhi,0.8
+New Delhi,Rajiv Chowk,1.1
+Rajiv Chowk,Patel Chowk,1.3
+Patel Chowk,Central Secretariat,0.9
+Central Secretariat,Udyog Bhawan,0.3
+Udyog Bhawan,Lok Kalyan Marg,1.6
+Lok Kalyan Marg,Jor Bagh,1.2
+Samaypur Badli,Rohini Sector - 18,0.8
+Rohini Sector - 18,Haiderpur Badli Mor,1.3
+Haiderpur Badli Mor,Jahangirpuri,1.3
+Jahangirpuri,Adarsh Nagar,1.3
+Adarsh Nagar,Azadpur,1.5
+Azadpur,Model Town,1.4
+Model Town,GTB Nagar,1.4
+GTB Nagar,Vishwavidyalaya,0.8
+Jor Bagh,INA,1.3
+INA,AIIMS,0.8
+AIIMS,Green Park,1.0
+Green Park,Hauz Khas,1.8
+Hauz Khas,Malviya Nagar,1.7
+Malviya Nagar,Saket,0.9
+Saket,Qutab Minar,1.7
+Qutab Minar,Chhattarpur,1.3
+Chhattarpur,Sultanpur,1.6
+Sultanpur,Ghitorni,1.3
+Ghitorni,Arjan Garh,2.7
+Arjan Garh,Guru Dronacharya,2.3
+Guru Dronacharya,Sikandarpur,1.0
+Sikandarpur,MG Road,1.2
+MG Road,IFFCO Chowk,1.1
+IFFCO Chowk,Huda City Centre,1.5

@@ -1,0 +1,235 @@
+1	Dilshad Garden
+2	Jhilmil
+3	Mansrovar park
+4	Shahdara
+5	Welcome
+6	Seelampur
+7	Shastri Park
+8	Kashmere Gate
+9	Tis Hazari
+10	Pulbangash
+11	Pratap Nagar
+12	Shastri Nagar
+13	Inderlok
+14	Kanhaiya Nagar
+15	Keshav Puram
+16	Netaji Subhash Place
+17	Kohat Enclave
+18	Pitam Pura
+19	Rohini East
+20	Rohini West
+21	Rithala
+22	Samaypur Badli
+23	Rohini Sector - 18
+24	Haiderpur Badli Mor
+25	Jahangirpuri
+26	Adarsh Nagar
+27	Azadpur
+28	Model Town
+29	GTB Nagar
+30	Vishwavidyalaya
+31	Vidhan Sabha
+32	Civil Lines
+33	Kashmere Gate
+34	Chandni Chowk
+35	Chawri Bazar
+36	New Delhi
+37	Rajiv Chowk
+38	Patel Chowk
+39	Central Secretariat
+40	Udyog Bhawan
+41	Lok Kalyan Marg
+42	Jor Bagh
+43	INA
+44	AIIMS
+45	Green Park
+46	Hauz Khas
+47	Malviya Nagar
+48	Saket
+49	Qutab Minar
+50	Chhattarpur
+51	Sultanpur
+52	Ghitorni
+53	Arjan Garh
+54	Guru Dronacharya
+55	Sikandarpur
+56	MG Road
+57	IFFCO Chowk
+58	Huda City Centre
+59	Noida City Centre
+60	Golf Course
+61	Botanical Garden
+62	Noida Sector-18
+63	Noida Sector-16
+64	Noida Sector-15
+65	New Ashok Nagar
+66	Mayur Vihar Extention
+67	Mayur Vihar Phase-1
+68	Akshardham
+69	Yamuna Bank
+70	Inderprastha
+71	Pragati Maiden
+72	Mandi House
+73	Barakhamba Road
+74	Rajiv Chowk
+75	RK Ashram Marg
+76	Jhandewalan
+77	Karol Bagh
+78	Rajender Place
+79	Patel Nagar
+80	Shadipur
+81	Kirti Nagar
+82	Moti Nagar
+83	Ramesh Nagar
+84	Rajouri Garden
+85	Tagore Garden
+86	Subash Nagar
+87	Tilak Nagar
+88	Janak Puri East
+89	Janak Puri West
+90	Uttam Nagar East
+91	Uttam Nagar West
+92	Nawada
+93	Dwaraka Mor
+94	Dwarka
+95	Dwarka Sector14
+96	Dwarka Sector13
+97	Dwarka Sector12
+98	Dwarka Sector11
+99	Dwarka Sector10
+100	Dwarka Sector9
+101	Dwarka Sector8
+102	Dwarka Sector21
+103	Vaishali
+104	Kaushambi
+105	Anand Vihar
+106	Karkar Duma
+107	Preet Vihar
+108	Nirman Vihar
+109	Laxmi Nagar
+110	City Park
+111	Bus Stand
+112	Modern Industrial Estate
+113	Tikri Border
+114	Tikri Kalan
+115	Ghevra Metro Station
+116	Mundka Industrial Area
+117	Mundka
+118	Rajdhani Park
+119	Nangloi Rly. Station
+120	Nangloi
+121	Surajmal Stadium
+122	Udyog Nagar
+123	Peera Garhi
+124	Paschim Vihar (West)
+125	Paschim Vihar (East)
+126	Madipur
+127	Shivaji Park
+128	Punjabi Bagh
+129	Ashok Park
+130	Inderlok
+131	Sant Guru Ram Singh Marg
+132	Kirti Nagar
+133	Kashmere Gate
+134	Lal Qila
+135	Jama Masjid
+136	Delhi Gate
+137	ITO
+138	Mandi House
+139	Janptah
+140	Central Secretariat
+141	Khan Market
+142	JL Nehru Stadium
+143	Jangpura
+144	Lajpat Nagar
+145	Moolchand
+146	Kailash Colony
+147	Nehru Place
+148	Kalkaji Mandir
+149	Govindpuri
+150	Okhla
+151	Jasola-Apollo
+152	Sarita Vihar
+153	Mohan Estate
+154	Tuglakabad
+155	Badarpur
+156	Sarai
+157	NHPC Chowk
+158	Mewala Maharajpur
+159	Sector-28
+160	Badkal Mor
+161	Old Faridabad
+162	Neelam Chowk Ajronda
+163	Bata Chowk
+164	Escorts Mujesar
+165	Sant Surdas
+166	Raja Nahar Singh
+167	Botanical Garden
+168	Okhla Bird Sanctuary
+169	Kalindi Kunj
+170	Jasola Vihar
+171	Okhla Vihar
+172	Jamia Milia Islamiya
+173	Sukhdev Vihar
+174	NSIC Okhla
+175	Kalkaji Mandir
+176	Nehru Enclave
+177	Greater Kailash
+178	Chirag Delhi
+179	Panchsheel Park
+180	Hauz Khas
+181	I.I.T
+182	R.K.Puram
+183	Munirka
+184	Vasant Vihar
+185	Shankar Vihar
+186	IGD Airport
+187	Sadar Bazar
+188	Palam
+189	Dashrathpuri
+190	Dabri Mor
+191	Janak Puri West
+192	Majlis Park
+193	Azadpur
+194	Shalimar Bagh
+195	Netaji Subash Place
+196	Shakurpur
+197	Punjabi Bagh West
+198	ESI Hospital
+199	Rajouri Garden
+200	Mayapuri
+201	Naraina Vihar
+202	Delhi Cantt.
+203	Durgabai Deshmukh South Campus
+204	Sir Vishweshwaraiah Moti Bagh
+205	Bhikaji Cama Place
+206	Sarojini Nagar
+207	INA
+208	South Extension
+209	Lajpat Nagar
+210	Trilokpuri
+211	Vinod Nagar East
+212	Vinod Nagar
+213	I.P. Extension
+214	Anand Vihar
+215	Karkar Duma
+216	Karkarduma Court
+217	Krishna Nagar
+218	East Azad Nagar
+219	Welcome
+220	Jafrabad
+221	Maujpur
+222	Gokulpuri
+223	Johri Enclave
+224	Shiv Vihar
+225	Sector55-56
+226	Sector54Chowk
+227	Sector53-54
+228	Sector42-43
+229	Phase-I
+230	Sikanderpur
+231	Phase2
+232	Belvedere Towers
+233	Cyber City
+234	Moulsari Avenue
+235	Phase 3

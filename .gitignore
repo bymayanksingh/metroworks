@@ -34,3 +34,14 @@ temp
 *.exe
 *.out
 *.app
+/metroworks
+
+# Build outputs
+build/
+bin/
+*.dSYM/
+.DS_Store
+
+# Generated outputs
+finalmap.dot
+path.png
